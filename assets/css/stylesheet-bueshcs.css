@@ -61,8 +61,14 @@ background-color: yellow;
   font-weight: bold;
 }
 
+h3.lead {
+  background-color: #007bff !important;
+  border-radius: 1em;
+}
+
 ::selection {
   background: yellow;
+  color: black;
 }
 
 .search-highlight {
@@ -76,7 +82,7 @@ background-color: yellow;
 }
 
 pre {
-  background-color: #2d3035;
+  background-color: #272822;
   color: #f8f8f2;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -153,6 +159,12 @@ pre code {
     padding: 42px;
     background: transparent;
 }
+
+/* Overiding @media */
+
+/*.container {
+    max-width: 80% !important;
+}*/
 
 @media screen and (min-width: 0px) and (max-width: 1404px) {
   .progress { display: none; }   /* hide it elsewhere, ps: ça se fait pas d'être en dessous de la Full HD mini... NaN% sérieux... */
@@ -359,4 +371,18 @@ body {
     bottom: 25px;
     right: 25px;
     display: none;
+}
+
+/* AMeTRICE */
+
+img.userpicture {
+    margin-right: 0.25rem;
+}
+
+/*:root {
+    --primary: #5a0cb9 !important;
+}
+*/
+.bg-primary {
+    background-color: #5a0cb9 !important;
 }
