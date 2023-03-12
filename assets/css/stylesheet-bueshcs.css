@@ -1,4 +1,4 @@
-  /* Custom style */
+/* Custom style */
 
 #MainContainer {
   margin-top: 42px;
@@ -462,6 +462,10 @@ img.userpicture {
 .alert-info .alert-link {
     color: #00171b;
 }
+
+/* Why overiding default bootstrap colorscheme with similar colors and removing yellow? Good question! 
+Please next time add your own scheme and don't replace bootstrap defaults... */
+
 .alert-warning, .environmenttable .warn {
     color: #6d001e;
     background-color: #f6ccd7;
