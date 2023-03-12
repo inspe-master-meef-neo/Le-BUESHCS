@@ -148,7 +148,7 @@ pre code {
 }
 
 /* Custom Progress Bar */
-.progress {
+.bueshcs-progress {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -167,7 +167,7 @@ pre code {
 }*/
 
 @media screen and (min-width: 0px) and (max-width: 1404px) {
-  .progress { display: none; }   /* hide it elsewhere, ps: ça se fait pas d'être en dessous de la Full HD mini... NaN% sérieux... */
+  .bueshcs-progress { display: none; }   /* hide it elsewhere, ps: ça se fait pas d'être en dessous de la Full HD mini... NaN% sérieux... */
 }
 
 .progress-ring {
@@ -317,7 +317,12 @@ pre code {
   transition: all 0.3s ease;
 }
 
-
+.trsptrn {
+background-color: #fafafa;
+background-image:  repeating-linear-gradient(45deg, #fdfdfd 25%, transparent 25%, transparent 75%, #fdfdfd 75%, #fdfdfd), repeating-linear-gradient(45deg, #fdfdfd 25%, #e5e5e5 25%, #e5e5e5 75%, #fdfdfd 75%, #fdfdfd);
+background-position: 0 0, 10px 10px;
+background-size: 20px 20px;
+}
 
 /* ######################################## 🌐 SCROLLBARS */
 
@@ -385,4 +390,119 @@ img.userpicture {
 */
 .bg-primary {
     background-color: #5a0cb9 !important;
+}
+
+/* Overadiation of Alerts */
+
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 0 solid transparent;
+    border-radius: .5rem;
+}
+.alert-heading {
+    color: inherit;
+}
+.alert-link {
+    font-weight: 700;
+}
+.alert-dismissible {
+    padding-right: 3.90625rem;
+}
+.alert-dismissible .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: .75rem 1.25rem;
+    color: inherit;
+}
+.alert-primary {
+    color: #2f0660;
+    background-color: #decef1;
+    border-color: #d1bbeb;
+}
+.alert-primary hr {
+    border-top-color: #c4a7e5;
+}
+.alert-primary .alert-link {
+    color: #170330;
+}
+.alert-secondary {
+    color: #06460a;
+    background-color: #cee7d0;
+    border-color: #bbddbd;
+}
+.alert-secondary hr {
+    border-top-color: #aad5ad;
+}
+.alert-secondary .alert-link {
+    color: #021703;
+}
+.alert-success, .environmenttable .ok {
+    color: #026800;
+    background-color: #cdf4cc;
+    border-color: #b9f0b8;
+}
+.alert-success hr, .environmenttable .ok hr {
+    border-top-color: #a4eca3;
+}
+.alert-success .alert-link, .environmenttable .ok .alert-link {
+    color: #013500;
+}
+.alert-info {
+    color: #00434e;
+    background-color: #cce6ea;
+    border-color: #b8dce2;
+}
+.alert-info hr {
+    border-top-color: #a6d3db;
+}
+.alert-info .alert-link {
+    color: #00171b;
+}
+.alert-warning, .environmenttable .warn {
+    color: #6d001e;
+    background-color: #f6ccd7;
+    border-color: #f2b8c8;
+}
+.alert-warning hr, .environmenttable .warn hr {
+    border-top-color: #eea2b7;
+}
+.alert-warning .alert-link, .environmenttable .warn .alert-link {
+    color: #3a0010;
+}
+.alert-danger, .environmenttable .error {
+    color: #671400;
+    background-color: #f4d4cc;
+    border-color: #efc3b8;
+}
+.alert-danger hr, .environmenttable .error hr {
+    border-top-color: #eab1a3;
+}
+.alert-danger .alert-link, .environmenttable .error .alert-link {
+    color: #340a00;
+}
+.alert-light {
+    color: #818182;
+    background-color: #fefefe;
+    border-color: #fdfdfe;
+}
+.alert-light hr {
+    border-top-color: #ececf6;
+}
+.alert-light .alert-link {
+    color: #686868;
+}
+.alert-dark {
+    color: #1b1e21;
+    background-color: #d6d8d9;
+    border-color: #c6c8ca;
+}
+.alert-dark hr {
+    border-top-color: #b9bbbe;
+}
+.alert-dark .alert-link {
+    color: #040505;
 }
