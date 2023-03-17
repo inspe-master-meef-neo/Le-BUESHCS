@@ -1,5 +1,52 @@
 /* Custom style */
 
+/* Sidebar */
+
+.collapse.width {
+  width: 0;
+  max-width: 0;
+  height: 100%;
+  transition: right 0.3s linear, max-width 0.3s linear;
+  position: relative;
+  top: 0;
+  right: 100%;
+  left: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.vh-100 {
+    min-height: 100vh;
+}
+
+.collapsing.width {
+  transition: right 0.3s linear, max-width 0.7s linear;
+  width: 0% !important;
+  height: 100%;
+  max-width: 0% !important;
+  min-width: 0;
+  right: 0;
+  position: relative;
+  display: block;
+}
+
+.collapse .list-group-item {
+  white-space:nowrap
+}
+
+.collapse.width.show {
+  transition: right 0.3s linear, max-width 0.3s linear;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  min-width: 50px;
+  right: 0;
+  position: relative;
+  display: block;
+}
+
+/* global */
+
 #MainContainer {
   margin-top: 42px;
   margin-bottom: 42px;
@@ -322,6 +369,12 @@ background-color: #fafafa;
 background-image:  repeating-linear-gradient(45deg, #fdfdfd 25%, transparent 25%, transparent 75%, #fdfdfd 75%, #fdfdfd), repeating-linear-gradient(45deg, #fdfdfd 25%, #e5e5e5 25%, #e5e5e5 75%, #fdfdfd 75%, #fdfdfd);
 background-position: 0 0, 10px 10px;
 background-size: 20px 20px;
+}
+
+.🚧WIP {
+background-color: #fcd53f;
+opacity: 0.8;
+background: repeating-linear-gradient( -45deg, #533566, #533566 5px, #fcd53f 5px, #fcd53f 25px );
 }
 
 /* ######################################## 🌐 SCROLLBARS */

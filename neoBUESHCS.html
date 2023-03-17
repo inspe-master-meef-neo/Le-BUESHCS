@@ -19,45 +19,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap">
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Luckiest%20Guy"> -->
-    <link rel="stylesheet" href="https://prb404.github.io/NEO/neo/customStyleSheetNEO.css">
+    <link rel="stylesheet" href="https://inspe-master-meef-neo.github.io/ametice/customs/BetterCall🟣.css">
     <link rel="stylesheet" href="https://ega1001.github.io/inspe/custom_newMoodle.css">
     <link rel="stylesheet" href="https://ega1001.github.io/inspe/custom_newMoodleGrey.css">
     <!--JS-->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/scripting-bueshcs.js"></script>
 </head>
 
-<body style="background: var(--gray-dark);"> <!--👚-->
+<body style="background: var(--gray-dark);" data-spy="scroll"> <!--👚-->         
     
     <div class="container container-sm" id="MainContainer"> <!--▶️-->      
-        <div class="search-container"> <!--🔎-->
-          <input type="text" id="search-input" placeholder="🔎 seek through The BUESHCS... 🤔"><kbd>beta</kbd><a href="https://github.com/inspe-master-meef-neo/Le-BUESHCS" target="_blank" class="badge badge-pill badge-warning">v.0.6666</a>
-          <button id="search-btn">
-            <span class="search-icon">
-              <i class="fa fa-search"></i>
-            </span>
-            <span class="close-icon">
-              <i class="fa fa-times"></i>
-            </span>
-          </button>
-        </div>
+<div class="search-container">
+  <div class="input-group">
+    <input type="text" class="form-control" id="search-input" placeholder="🔎 seek through The BUESHCS... 🤔">
+    <div class="input-group-append">
+      <button id="search-btn" class="btn btn-outline-secondary" type="button">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <span class="close-icon">
+          <i class="fa fa-times"></i>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+
 
       <div class="accordion" id="BUESHCSaccordion"> <!--▶️|🪗|🗃️-->
 
         <div class="card"> <!--▶️|🎟️|📁--><!--▶️ INTRO-->
 
-          <div class="card-header" id="headingIntro"> <!--▶️|🎫|🤯-->
+          <div class="card-header" id="headingINTRO"> <!--▶️|🎫|🤯-->
             <h1 class="mb-0">
-              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseINTRO" aria-expanded="true" aria-controls="collapseINTRO">
                 ▶️ INTRO
               </button>
             </h1>
           </div> <!--⏹|🎫|🤯-->
 
-          <div id="collapseIntro" class="collapse show" aria-labelledby="headingIntro" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
+          <div id="collapseINTRO" class="collapse show" aria-labelledby="headingINTRO" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
             <div class="card-body"> <!--▶️|🎫|👚-->
+
+              <div class="card-footer bg-dark text-white text-justify small">
+                <h5>👋😊 Welcome to <i>Le BUESHCS</i></h5>
+                <hr class="bg-info"><p>Le <abbr title="BootstrapUltimateEducationShitsHitsCheatsSheet">BUESHCS</abbr> est une collection de <i>snippets</i> <abbr title="HyperText Markup Language" class="initialism">HTML</abbr> à copier/coller <kbd> ✂️ / 📋 </kbd>  dans n'importe quel espace de texte dans <abbr title="Modular Object-Oriented Dynamic Learning Environment" class="initialism">Moodle</abbr> pour lequel il est possible d'éditer le code source en l'augmentant par ces composants.</p>
+                <p>Ces composants sont basés sur le <i>framework</i> <kbd>HTML/CSS/JS</kbd> <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/" target="_blank">Bootstrap</a> <kbd>4</kbd>  sur lequel le theme principal de <abbr title="Modular Object-Oriented Dynamic Learning Environment" class="initialism">Moodle</abbr> est construit (<a href="https://docs.moodle.org/401/en/Boost_theme" target="_blank">Boost</a>).</p>
+                <p>Certains de ces composants disposent d'éléments de style complémentaires qui peuvent être chargés parallèment, l'affichage pourrait donc varier sensiblement selon les customisations rajoutées au theme Moodle utilisé.</p>
+              </div>           
 
               <script src="https://giscus.app/client.js"
               data-repo="inspe-master-meef-neo/Le-BUESHCS"
@@ -72,7 +83,7 @@
               data-theme="dark_dimmed"
               data-lang="en"
               data-loading="lazy"
-              crossorigin="anonymous"
+              crossorigin="*"
               async>
               </script>
 
@@ -94,7 +105,312 @@
           <div id="collapseACTIVITY" class="collapse" aria-labelledby="headingACTIVITY" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
             <div class="card-body"> <!--▶️|🎫|👚-->
 
+              <!-- beginning of subaccordion -->
+              <div class="accordion" id="accordionACTIVITY"> <!--▶️|🗂️🪗-->
 
+                <div class="card"> <!--▶️|🎟️|📁|🎟️-->
+
+                  <div class="card-header" id="headingResearchAccordion"> <!--▶️|🎫|🤯-->
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseResearchAccordion" aria-expanded="false" aria-controls="collapseResearchAccordion">
+                        <!-- title -->Accordéon de la recherche
+                      </button>
+                    </h2>
+                  </div> <!--⏹|🎫|🤯-->
+
+                  <div id="collapseResearchAccordion" class="collapse" aria-labelledby="headingResearchAccordion" data-parent="#accordionACTIVITY"> <!--▶️|🎫|👙-->
+                    <div class="card-body"> <!--▶️|🎫|👚-->
+
+                      <!-- Display AccordéonDeLaRecherche -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+
+                            <div class="col">
+                              <div class="shadow" role="tablist" data-toggle="tooltip" data-bss-tooltip="" id="accordion-1" data-original-title="" title="">
+                                <div class="card">
+                                  <div class="card-header" role="tab" style="background: rgb(166,77,121);">
+                                    <h5 class="mb-0"><a class="text-uppercase text-white" data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-1" href="#accordion-1 .item-1" data-bss-hover-animate="flash" style="display: flex;">Introduction</a></h5>
+                                  </div>
+                                  <div class="item-1 collapse show" role="tabpanel" data-parent="#accordion-1" style="background: rgb(234, 209, 220);">
+                                    <div class="card-body">
+                                      <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" role="tab" style="background: #3c78d8;">
+                                    <h5 class="mb-0"><a class="text-uppercase text-white" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="#accordion-1 .item-2" data-bss-hover-animate="flash" style="display: flex;">État de l'art</a></h5>
+                                  </div>
+                                  <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1" style="background: #c9daf8;">
+                                    <div class="card-body">
+                                      <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" role="tab" style="background: #6aa84f;">
+                                    <h5 class="mb-0"><a class="text-uppercase text-white collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="#accordion-1 .item-3" data-bss-hover-animate="flash" style="display: flex;">Problématique</a></h5>
+                                  </div>
+                                  <div class="item-3 collapse" role="tabpanel" data-parent="#accordion-1" style="background: rgb(217, 234, 211);">
+                                    <div class="card-body">
+                                      <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" role="tab" style="background: #f1c232;">
+                                    <h5 class="mb-0"><a class="text-uppercase text-white collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-4" href="#accordion-1 .item-4" data-bss-hover-animate="flash" style="display: flex;">Méthodologie</a></h5>
+                                  </div>
+                                  <div class="item-4 collapse" role="tabpanel" data-parent="#accordion-1" style="background: rgb(255, 242, 204);">
+                                    <div class="card-body">
+                                      <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" role="tab" style="background: #e69138;">
+                                    <h5 class="mb-0"><a class="text-uppercase text-white collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-5" href="#accordion-1 .item-5" data-bss-hover-animate="flash" style="display: flex;">Résultats</a></h5>
+                                  </div>
+                                  <div class="item-5 collapse" role="tabpanel" data-parent="#accordion-1" style="background: rgb(252, 229, 205);">
+                                    <div class="card-body">
+                                      <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" role="tab" style="background: #cc0000;">
+                                    <h5 class="mb-0"><a class="text-uppercase text-white collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-6" href="#accordion-1 .item-6" data-bss-hover-animate="flash" style="display: flex;">Discussions</a></h5>
+                                  </div>
+                                  <div class="item-6 collapse" role="tabpanel" data-parent="#accordion-1" style="background: rgb(244, 204, 204);">
+                                    <div class="card-body">
+                                      <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" role="tab" style="background: #a61c00;">
+                                    <h5 class="mb-0"><a class="text-uppercase text-white collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-7" href="#accordion-1 .item-7" data-bss-hover-animate="flash" style="display: flex;">Conclusion</a></h5>
+                                  </div>
+                                  <div class="item-7 collapse" role="tabpanel" data-parent="#accordion-1" style="background: rgb(230, 184, 175);">
+                                    <div class="card-body">
+                                      <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for AccordéonDeLaRecherche -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;div class=&quot;col&quot;&gt;
+  &lt;div class=&quot;shadow&quot; role=&quot;tablist&quot; data-toggle=&quot;tooltip&quot; data-bss-tooltip=&quot;&quot; id=&quot;accordion-1&quot; data-original-title=&quot;&quot; title=&quot;&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card-header&quot; role=&quot;tab&quot; style=&quot;background: rgb(166,77,121);&quot;&gt;
+        &lt;h5 class=&quot;mb-0&quot;&gt;&lt;a class=&quot;text-uppercase text-white&quot; data-toggle=&quot;collapse&quot; aria-expanded=&quot;true&quot; aria-controls=&quot;accordion-1 .item-1&quot; href=&quot;#accordion-1 .item-1&quot; data-bss-hover-animate=&quot;flash&quot; style=&quot;display: flex;&quot;&gt;Introduction&lt;/a&gt;&lt;/h5&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;item-1 collapse show&quot; role=&quot;tabpanel&quot; data-parent=&quot;#accordion-1&quot; style=&quot;background: rgb(234, 209, 220);&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card-header&quot; role=&quot;tab&quot; style=&quot;background: #3c78d8;&quot;&gt;
+        &lt;h5 class=&quot;mb-0&quot;&gt;&lt;a class=&quot;text-uppercase text-white&quot; data-toggle=&quot;collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;accordion-1 .item-2&quot; href=&quot;#accordion-1 .item-2&quot; data-bss-hover-animate=&quot;flash&quot; style=&quot;display: flex;&quot;&gt;État de l'art&lt;/a&gt;&lt;/h5&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;collapse item-2&quot; role=&quot;tabpanel&quot; data-parent=&quot;#accordion-1&quot; style=&quot;background: #c9daf8;&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card-header&quot; role=&quot;tab&quot; style=&quot;background: #6aa84f;&quot;&gt;
+        &lt;h5 class=&quot;mb-0&quot;&gt;&lt;a class=&quot;text-uppercase text-white collapsed&quot; data-toggle=&quot;collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;accordion-1 .item-3&quot; href=&quot;#accordion-1 .item-3&quot; data-bss-hover-animate=&quot;flash&quot; style=&quot;display: flex;&quot;&gt;Problématique&lt;/a&gt;&lt;/h5&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;item-3 collapse&quot; role=&quot;tabpanel&quot; data-parent=&quot;#accordion-1&quot; style=&quot;background: rgb(217, 234, 211);&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card-header&quot; role=&quot;tab&quot; style=&quot;background: #f1c232;&quot;&gt;
+        &lt;h5 class=&quot;mb-0&quot;&gt;&lt;a class=&quot;text-uppercase text-white collapsed&quot; data-toggle=&quot;collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;accordion-1 .item-4&quot; href=&quot;#accordion-1 .item-4&quot; data-bss-hover-animate=&quot;flash&quot; style=&quot;display: flex;&quot;&gt;Méthodologie&lt;/a&gt;&lt;/h5&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;item-4 collapse&quot; role=&quot;tabpanel&quot; data-parent=&quot;#accordion-1&quot; style=&quot;background: rgb(255, 242, 204);&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card-header&quot; role=&quot;tab&quot; style=&quot;background: #e69138;&quot;&gt;
+        &lt;h5 class=&quot;mb-0&quot;&gt;&lt;a class=&quot;text-uppercase text-white collapsed&quot; data-toggle=&quot;collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;accordion-1 .item-5&quot; href=&quot;#accordion-1 .item-5&quot; data-bss-hover-animate=&quot;flash&quot; style=&quot;display: flex;&quot;&gt;Résultats&lt;/a&gt;&lt;/h5&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;item-5 collapse&quot; role=&quot;tabpanel&quot; data-parent=&quot;#accordion-1&quot; style=&quot;background: rgb(252, 229, 205);&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card-header&quot; role=&quot;tab&quot; style=&quot;background: #cc0000;&quot;&gt;
+        &lt;h5 class=&quot;mb-0&quot;&gt;&lt;a class=&quot;text-uppercase text-white collapsed&quot; data-toggle=&quot;collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;accordion-1 .item-6&quot; href=&quot;#accordion-1 .item-6&quot; data-bss-hover-animate=&quot;flash&quot; style=&quot;display: flex;&quot;&gt;Discussions&lt;/a&gt;&lt;/h5&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;item-6 collapse&quot; role=&quot;tabpanel&quot; data-parent=&quot;#accordion-1&quot; style=&quot;background: rgb(244, 204, 204);&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card-header&quot; role=&quot;tab&quot; style=&quot;background: #a61c00;&quot;&gt;
+        &lt;h5 class=&quot;mb-0&quot;&gt;&lt;a class=&quot;text-uppercase text-white collapsed&quot; data-toggle=&quot;collapse&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;accordion-1 .item-7&quot; href=&quot;#accordion-1 .item-7&quot; data-bss-hover-animate=&quot;flash&quot; style=&quot;display: flex;&quot;&gt;Conclusion&lt;/a&gt;&lt;/h5&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;item-7 collapse&quot; role=&quot;tabpanel&quot; data-parent=&quot;#accordion-1&quot; style=&quot;background: rgb(230, 184, 175);&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+          &lt;p class=&quot;card-text&quot;&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      </div> <!--⏹|🎫|👚-->
+                    </div> <!--⏹|🎫|👙-->
+
+                  </div> <!--⏹|🎟️|📁|🎟️-->
+
+                  <div class="card"> <!--▶️|🎟️|📁|🎟️-->
+
+                    <div class="card-header" id="headingEmbedPedaweb"> <!--▶️|🎫|🤯-->
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEmbedPedaweb" aria-expanded="false" aria-controls="collapseEmbedPedaweb">
+                          <!--🎟️|📁 title of this card -->Embed pedaweb
+                        </button>
+                      </h2>
+                    </div> <!--⏹|🎫|🤯-->
+
+                    <div id="collapseEmbedPedaweb" class="collapse" aria-labelledby="headingEmbedPedaweb" data-parent="#accordionACTIVITY"> <!--▶️|🎫|👙-->
+                      <div class="card-body"> <!--▶️|🎫|👚-->
+
+                      <!-- Display EmbedPedaweb -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+
+                            <iframe width="100%" height="888" src="https://pierre-bellet.pedaweb.univ-amu.fr" frameborder="0" scrolling="yes" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen=""></iframe>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for EmbedPedaweb -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;iframe width=&quot;100%&quot; height=&quot;888&quot; src=&quot;https://pierre-bellet.pedaweb.univ-amu.fr&quot; frameborder=&quot;0&quot; scrolling=&quot;yes&quot; allow=&quot;fullscreen; clipboard-read; clipboard-write&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      </div> <!--⏹|🎫|👚-->
+                    </div> <!--⏹|🎫|👙 end of collapse -->
+
+                  </div> <!--⏹|🎟️|📁|🎟️ end of card -->
+
+                                    <div class="card"> <!--▶️|🎟️|📁|🎟️-->
+
+                    <div class="card-header" id="headingTableauMiro"> <!--▶️|🎫|🤯-->
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTableauMiro" aria-expanded="false" aria-controls="collapseTableauMiro">
+                          <!--🎟️|📁 title of this card -->Embed Tableau miro
+                        </button>
+                      </h2>
+                    </div> <!--⏹|🎫|🤯-->
+
+                    <div id="collapseTableauMiro" class="collapse" aria-labelledby="headingTableauMiro" data-parent="#accordionACTIVITY"> <!--▶️|🎫|👙-->
+                      <div class="card-body"> <!--▶️|🎫|👚-->
+
+                      <!-- Display EmbedTableauMiro -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+
+                            <div class="alert-light p-3 bg-light text-dark" role="alert">
+                              <span contenteditable="false">
+                                <i class="fa-duotone fa-chalkboard-user fa-4x fa-pull-left" aria-hidden="true"></i>
+                                <span class="h4 align-text-top">Tableau miro</span>
+                              </span>
+                              <div class="p-2 ml-0 d-flex flex-wrap">
+                                <p class="lead">📈📊📉 Types de données et tests statistiques au travers d'un tableau.</p>
+                              </div>
+                              <iframe width="100%" height="512" src="https://miro.com/app/live-embed/uXjVMeZN7io=/?moveToViewport=-16161,-8996,34905,18198&amp;embedId=736541378494" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen=""></iframe>
+
+                              <div class="card-footer text-muted small">
+                                <p><span><i class="fa-duotone fa-note"></i></span>
+                                  Ce travail représente le fruit de plusieurs mois de recherche sur la <strong>méthodologie</strong> et les <strong>méthodes de recherches.</strong> <br>Il a été réalisé ces dernières années lors de la thèse de plusieurs membres de la Team <strong>HUMANCONNECT</strong>, sous la direction de <strong>Stéphanie Mailles&nbsp;Viard&nbsp;Metz</strong>&nbsp;:) <br>La majeure contribution à ce document nous provient du Docteur<strong> José Samaniego Cho</strong> (<a href="https://www.linkedin.com/in/jos%C3%A9-samaniego-cho/" target="_blank" style="">LKN</a>, <a href="https://www.theses.fr/s208105" target="_blank">THZ</a>) qui nous a beaucoup aidé et apporté sur la meilleure compréhension de ce merveilleux monde de la statistique. Ne soyez donc pas trop impressionnés par la teneur très riche de ce tableau car il y avait une intention d'exhaustivité... <br><strong>Survolez</strong>, <strong>sélectionnez</strong>, <strong>cherchez </strong>les logiques générales et celles qui vous intéressent plus particulièrement au besoin. <br>Ce tableau est une copie de la version de source à partir d'un backup, vous pouvez donc librement interagir dedans.<br><u>Accès direct :</u>&nbsp;<a href="https://miro.com/welcomeonboard/RGo1UW80UVdvTlA0SVJDY3Fub3YzcWxKQ281b2VFQnRQS0RyQmR4cjlPRU5ERW1XYnRIN0NXRWhSUGpMc2xNd3wzNDU4NzY0NTMzMjc1MTYwMDEzfDI=?share_link_id=182464139779">📈📊📉 Types de données et tests statistiques</a>
+                                </p>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for EmbedTableauMiro -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;div class=&quot;alert-light p-3 bg-light text-dark&quot; role=&quot;alert&quot;&gt;
+    &lt;span contenteditable=&quot;false&quot;&gt;
+        &lt;i class=&quot;fa-duotone fa-chalkboard-user fa-4x fa-pull-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        &lt;span class=&quot;h4 align-text-top&quot;&gt;Tableau miro&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;div class=&quot;p-2 ml-0 d-flex flex-wrap&quot;&gt;
+        &lt;p class=&quot;lead&quot;&gt;📈📊📉 Types de données et tests statistiques au travers d'un tableau.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;iframe width=&quot;100%&quot; height=&quot;512&quot; src=&quot;https://miro.com/app/live-embed/uXjVMeZN7io=/?moveToViewport=-16161,-8996,34905,18198&amp;amp;embedId=736541378494&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allow=&quot;fullscreen; clipboard-read; clipboard-write&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+    &lt;div class=&quot;card-footer text-muted small&quot;&gt;
+        &lt;p&gt;&lt;span&gt;&lt;i class=&quot;fa-duotone fa-note&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            Ce travail représente le fruit de plusieurs mois de recherche sur la &lt;strong&gt;méthodologie&lt;/strong&gt; et les &lt;strong&gt;méthodes de recherches.&lt;/strong&gt; &lt;br&gt;Il a été réalisé ces dernières années lors de la thèse de plusieurs membres de la Team &lt;strong&gt;HUMANCONNECT&lt;/strong&gt;, sous la direction de &lt;strong&gt;Stéphanie Mailles&amp;nbsp;Viard&amp;nbsp;Metz&lt;/strong&gt;&amp;nbsp;:) &lt;br&gt;La majeure contribution à ce document nous provient du Docteur&lt;strong&gt; José Samaniego Cho&lt;/strong&gt; (&lt;a href=&quot;https://www.linkedin.com/in/jos%C3%A9-samaniego-cho/&quot; target=&quot;_blank&quot; style=&quot;&quot;&gt;LKN&lt;/a&gt;, &lt;a href=&quot;https://www.theses.fr/s208105&quot; target=&quot;_blank&quot;&gt;THZ&lt;/a&gt;) qui nous a beaucoup aidé et apporté sur la meilleure compréhension de ce merveilleux monde de la statistique. Ne soyez donc pas trop impressionnés par la teneur très riche de ce tableau car il y avait une intention d'exhaustivité... &lt;br&gt;&lt;strong&gt;Survolez&lt;/strong&gt;, &lt;strong&gt;sélectionnez&lt;/strong&gt;, &lt;strong&gt;cherchez &lt;/strong&gt;les logiques générales et celles qui vous intéressent plus particulièrement au besoin. &lt;br&gt;Ce tableau est une copie de la version de source à partir d'un backup, vous pouvez donc librement interagir dedans.&lt;br&gt;&lt;u&gt;Accès direct :&lt;/u&gt;&amp;nbsp;&lt;a href=&quot;https://miro.com/welcomeonboard/RGo1UW80UVdvTlA0SVJDY3Fub3YzcWxKQ281b2VFQnRQS0RyQmR4cjlPRU5ERW1XYnRIN0NXRWhSUGpMc2xNd3wzNDU4NzY0NTMzMjc1MTYwMDEzfDI=?share_link_id=182464139779&quot;&gt;📈📊📉 Types de données et tests statistiques&lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      </div> <!--⏹|🎫|👚-->
+                    </div> <!--⏹|🎫|👙 end of collapse -->
+
+                  </div> <!--⏹|🎟️|📁|🎟️ end of card -->
+
+                </div> <!--⏹|🗂️|🪗 end of subaccordion -->
 
             </div> <!--⏹|🎫|👚-->
           </div> <!--⏹|🎫|👙-->
@@ -103,15 +419,15 @@
 
         <div class="card"> <!--▶️|🎟️|📁--><!--📁 MODULE-->
 
-          <div class="card-header" id="headingModule"> <!--🎫|🤯-->
+          <div class="card-header" id="headingMODULE"> <!--🎫|🤯-->
             <h1 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseModule" aria-expanded="false" aria-controls="collapseModule">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseMODULE" aria-expanded="false" aria-controls="collapseMODULE">
                 📁 MODULE
               </button>
             </h1>
           </div> <!--⏹|🎫|🤯-->
 
-          <div id="collapseModule" class="collapse" aria-labelledby="headingModule" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
+          <div id="collapseMODULE" class="collapse" aria-labelledby="headingMODULE" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
             <div class="card-body"> <!--▶️|🎫|👚-->
 
               <!-- beginning of subaccordion -->
@@ -129,7 +445,7 @@
 
                   <div id="collapsePrésentationModule" class="collapse" aria-labelledby="headingPrésentationModule" data-parent="#accordionMODULE"> <!--▶️|🎫|👙-->
                     <div class="card-body"> <!--▶️|🎫|👚-->
-                      <h3 class="p-3 mb-2 bg-primary text-white lead">Présentation de module 🟦UE42</h3>
+                      <h3 class="p-3 mb-2 bg-primary text-white lead" id="🟦UE42">Présentation de module 🟦UE42</h3>
 
                       <!-- Display Présentation module (UE42) -->
                       <div class="container py-1">
@@ -1676,15 +1992,15 @@
 
         <div class="card"> <!--▶️|🎟️|📁--><!--🗂️ COURSE-->
 
-          <div class="card-header" id="headingCourse"> <!--🎫|🤯-->
+          <div class="card-header" id="headingCOURSE"> <!--🎫|🤯-->
             <h1 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseCourse" aria-expanded="false" aria-controls="collapseCourse">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseCOURSE" aria-expanded="false" aria-controls="collapseCOURSE">
                 🗂️ COURSE
               </button>
             </h1>
           </div> <!--⏹|🎫|🤯-->
 
-          <div id="collapseCourse" class="collapse" aria-labelledby="headingCourse" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
+          <div id="collapseCOURSE" class="collapse" aria-labelledby="headingCOURSE" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
             <div class="card-body"> <!--▶️|🎫|👚-->
 
               <div class="accordion" id="accordionCOURSE"> <!--▶️|🗂️🪗-->
@@ -2269,15 +2585,15 @@
 
         <div class="card"> <!--▶️|🎟️|📁--><!--🗃️ FORMATION-->
 
-          <div class="card-header" id="headingFormation"> <!--🎫|🤯-->
+          <div class="card-header" id="headingFORMATION"> <!--🎫|🤯-->
             <h1 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFormation" aria-expanded="false" aria-controls="collapseFormation">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFORMATION" aria-expanded="false" aria-controls="collapseFORMATION">
                 🗃️ FORMATION
               </button>
             </h1>
           </div> <!--⏹|🎫|🤯-->
 
-          <div id="collapseFormation" class="collapse" aria-labelledby="headingFormation" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
+          <div id="collapseFORMATION" class="collapse" aria-labelledby="headingFORMATION" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
             <div class="card-body"> <!--▶️|🎫|👚-->
 
               <div class="accordion" id="accordionFORMATION"> <!--▶️|🗂️🪗-->
@@ -2458,6 +2774,7 @@
     &lt;div class=&quot;col-sm-12 col-md-4&quot;&gt;
       &lt;h5&gt;&lt;img src=&quot;./assets/img/anonavatar (404).png&quot; class=&quot;userpicture img-thumbnail rounded-circle&quot; alt=&quot;NO AVATAR&quot; title=&quot;NO AVATAR&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;&lt;a href=&quot;https://ametice.univ-amu.fr/user/view.php?id=85623&quot; target=&quot;_blank&quot; style=&quot;&quot;&gt;Martine GADILLE&lt;/a&gt;&lt;/h5&gt;
     &lt;/div&gt;
+
     &lt;div class=&quot;col-sm-12 col-md-4&quot;&gt;
       &lt;h5&gt;&lt;img src=&quot;https://ametice.univ-amu.fr/pluginfile.php/3887756/user/icon/amuboost/f1&quot; class=&quot;userpicture img-thumbnail rounded-circle&quot; alt=&quot;Avatar Muhaymina SEDEKI&quot; title=&quot;Avatar Muhaymina SEDEKI&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;&lt;a href=&quot;https://ametice.univ-amu.fr/user/view.php?id=2738678&quot; target=&quot;_blank&quot;&gt;Muhaymina SEDEKI&lt;/a&gt;&lt;/h5&gt;
     &lt;/div&gt;
@@ -2522,20 +2839,20 @@
                         <div class="row row py-2">
                           <div class="col-lg-12 mx-auto">
 
-<div class="titreConteneur">
-  <h5 class="titreMaster">MASTER NEO | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)</h5>
-  <div class="ueEns">
-    <h4 class="ue">🟣M1&amp;2</h4>
-  </div>
-  <div class="maintitle" style="background-color:#5a0cb9!important">
-    <div class="row flex-md-row justify-content-md-center">
-      <div class="col-12 col-md-8">
-        <h4 class="titreUe"><a href="https://ametice.univ-amu.fr/course/view.php?id=100828" style="outline-width: 0px !important; user-select: auto !important;"><span class="titreEns">Espace de regroupement Master 1 &amp; 2</span></a></h4>
-      </div>
-      <div class="col-12 col-md-4"><a href="https://ametice.univ-amu.fr/admin/tool/lp/plans.php?userid=%7Buserid%7D" class="btn btn-sm float-right btn-light" target="_blank">🎓 Plan de formation</a></div>
-    </div>
-  </div>
-</div>
+                            <div class="titreConteneur">
+                              <h5 class="titreMaster">MASTER NEO | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)</h5>
+                              <div class="ueEns">
+                                <h4 class="ue">🟣M1&amp;2</h4>
+                              </div>
+                              <div class="maintitle" style="background-color:#5a0cb9!important">
+                                <div class="row flex-md-row justify-content-md-center">
+                                  <div class="col-12 col-md-8">
+                                    <h4 class="titreUe"><a href="https://ametice.univ-amu.fr/course/view.php?id=100828" style="outline-width: 0px !important; user-select: auto !important;"><span class="titreEns">Espace de regroupement Master 1 &amp; 2</span></a></h4>
+                                  </div>
+                                  <div class="col-12 col-md-4"><a href="https://ametice.univ-amu.fr/admin/tool/lp/plans.php?userid=%7Buserid%7D" class="btn btn-sm float-right btn-light" target="_blank">🎓 Plan de formation</a></div>
+                                </div>
+                              </div>
+                            </div>
 
                           </div>
                         </div>
@@ -2575,20 +2892,20 @@
                         <div class="row row py-2">
                           <div class="col-lg-12 mx-auto">
 
-<div class="titreConteneur">
-  <h5 class="titreMaster">MASTER 1 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)</h5>
-  <div class="ueEns">
-    <h4 class="ue">🔵M1</h4>
-  </div>
-  <div class="maintitle" style="background-color:#1670cc!important">
-    <div class="row flex-md-row justify-content-md-center">
-      <div class="col-12 col-md-8">
-        <h4 class="titreUe"><a href="https://ametice.univ-amu.fr/course/view.php?id=92615" style="outline-width: 0px !important; user-select: auto !important;"><span class="titreEns">Espace d'accueil du Master 1</span></a></h4>
-      </div>
-      <div class="col-12 col-md-4"><a href="https://ametice.univ-amu.fr/admin/tool/lp/plans.php?userid=%7Buserid%7D" class="btn btn-sm float-right btn-light" target="_blank">🎓 Plan de formation</a></div>
-    </div>
-  </div>
-</div>
+                            <div class="titreConteneur">
+                              <h5 class="titreMaster">MASTER 1 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)</h5>
+                              <div class="ueEns">
+                                <h4 class="ue">🔵M1</h4>
+                              </div>
+                              <div class="maintitle" style="background-color:#1670cc!important">
+                                <div class="row flex-md-row justify-content-md-center">
+                                  <div class="col-12 col-md-8">
+                                    <h4 class="titreUe"><a href="https://ametice.univ-amu.fr/course/view.php?id=92615" style="outline-width: 0px !important; user-select: auto !important;"><span class="titreEns">Espace d'accueil du Master 1</span></a></h4>
+                                  </div>
+                                  <div class="col-12 col-md-4"><a href="https://ametice.univ-amu.fr/admin/tool/lp/plans.php?userid=%7Buserid%7D" class="btn btn-sm float-right btn-light" target="_blank">🎓 Plan de formation</a></div>
+                                </div>
+                              </div>
+                            </div>
 
                           </div>
                         </div>
@@ -2628,20 +2945,20 @@
                         <div class="row row py-2">
                           <div class="col-lg-12 mx-auto">
 
-<div class="titreConteneur">
-  <h5 class="titreMaster">MASTER 2 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)</h5>
-  <div class="ueEns">
-    <h4 class="ue">🔴M2</h4>
-  </div>
-  <div class="maintitle" style="background-color:#d13c3c!important">
-    <div class="row flex-md-row justify-content-md-center">
-      <div class="col-12 col-md-8">
-        <h4 class="titreUe"><a href="https://ametice.univ-amu.fr/course/view.php?id=100192" style="outline-width: 0px !important; user-select: auto !important;"><span class="titreEns">Espace d'accueil du Master 2</span></a></h4>
-      </div>
-      <div class="col-12 col-md-4"><a href="https://ametice.univ-amu.fr/admin/tool/lp/plans.php?userid=%7Buserid%7D" class="btn btn-sm float-right btn-light" target="_blank">🎓 Plan de formation</a></div>
-    </div>
-  </div>
-</div>
+                            <div class="titreConteneur">
+                              <h5 class="titreMaster">MASTER 2 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)</h5>
+                              <div class="ueEns">
+                                <h4 class="ue">🔴M2</h4>
+                              </div>
+                              <div class="maintitle" style="background-color:#d13c3c!important">
+                                <div class="row flex-md-row justify-content-md-center">
+                                  <div class="col-12 col-md-8">
+                                    <h4 class="titreUe"><a href="https://ametice.univ-amu.fr/course/view.php?id=100192" style="outline-width: 0px !important; user-select: auto !important;"><span class="titreEns">Espace d'accueil du Master 2</span></a></h4>
+                                  </div>
+                                  <div class="col-12 col-md-4"><a href="https://ametice.univ-amu.fr/admin/tool/lp/plans.php?userid=%7Buserid%7D" class="btn btn-sm float-right btn-light" target="_blank">🎓 Plan de formation</a></div>
+                                </div>
+                              </div>
+                            </div>
 
                           </div>
                         </div>
@@ -2675,6 +2992,346 @@
                         </div>
                       </div>
                       <hr>
+
+                      <h3 class="p-3 mb-2 bg-primary text-white lead">Entêtes UEs Master 1</h3>
+                      <!-- Display Entêtes UEs Master 1 -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+
+                            <div class="titreConteneur">
+                              <h5 class="titreMaster">MASTER 1 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)</h5>
+                              <div class="ueEns">
+                                <h4 class="ue">🟨UEx1</h4>
+                              </div>
+                              <div class="maintitle" style="background-color:#eab819!important">
+                                <h4 class="titreUe"><a href="https://ametice.univ-amu.fr/course/view.php?id=#####"> <span class="titreEns">Pédagogie du numérique et de l'innovation ⭐</span></a></h4>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for Entête Master 1 -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+
+&lt;div class=&quot;titreConteneur&quot;&gt;
+  &lt;h5 class=&quot;titreMaster&quot;&gt;MASTER 1 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)&lt;/h5&gt;
+  &lt;div class=&quot;ueEns&quot;&gt;
+    &lt;h4 class=&quot;ue&quot;&gt;🟨UEx1&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;maintitle&quot; style=&quot;background-color:#eab819!important&quot;&gt;
+        &lt;h4 class=&quot;titreUe&quot;&gt;&lt;a href=&quot;https://ametice.univ-amu.fr/course/view.php?id=#####&quot;&gt; &lt;span class=&quot;titreEns&quot;&gt;Pédagogie du numérique et de l'innovation ⭐&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+
+                      <!-- Display Entêtes UEs Master 1 -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+
+                            <div class="titreConteneur">
+                              <h5 class="titreMaster">MASTER 1 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)</h5>
+                              <div class="ueEns">
+                                <h4 class="ue">🟦UEx2</h4>
+                              </div>
+                              <div class="maintitle" style="background-color:#0066cc!important">
+                                <h4 class="titreUe"><a href="https://ametice.univ-amu.fr/course/view.php?id=#####"> <span class="titreEns">Conception de ressources et de e-formation ⭐</span></a></h4>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for Entête Master 1 -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;div class=&quot;titreConteneur&quot;&gt;
+  &lt;h5 class=&quot;titreMaster&quot;&gt;MASTER 1 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)&lt;/h5&gt;
+  &lt;div class=&quot;ueEns&quot;&gt;
+    &lt;h4 class=&quot;ue&quot;&gt;🟦UEx2&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;maintitle&quot; style=&quot;background-color:#0066cc!important&quot;&gt;
+        &lt;h4 class=&quot;titreUe&quot;&gt;&lt;a href=&quot;https://ametice.univ-amu.fr/course/view.php?id=#####&quot;&gt; &lt;span class=&quot;titreEns&quot;&gt;Conception de ressources et de e-formation ⭐&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+
+                      <!-- Display Entêtes UEs Master 1 -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+
+                            <div class="titreConteneur">
+                              <h5 class="titreMaster">MASTER 1 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)</h5>
+                              <div class="ueEns">
+                                <h4 class="ue">🟥UEx3</h4>
+                              </div>
+                              <div class="maintitle" style="background-color:#cf2f44!important">
+                                <h4 class="titreUe"><a href="https://ametice.univ-amu.fr/course/view.php?id=#####"> <span class="titreEns">Pilotage de la e-formation ⭐</span></a></h4>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for Entête Master 1 -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;div class=&quot;titreConteneur&quot;&gt;
+  &lt;h5 class=&quot;titreMaster&quot;&gt;MASTER 1 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)&lt;/h5&gt;
+  &lt;div class=&quot;ueEns&quot;&gt;
+    &lt;h4 class=&quot;ue&quot;&gt;🟥UEx3&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;maintitle&quot; style=&quot;background-color:#cf2f44!important&quot;&gt;
+        &lt;h4 class=&quot;titreUe&quot;&gt;&lt;a href=&quot;https://ametice.univ-amu.fr/course/view.php?id=#####&quot;&gt; &lt;span class=&quot;titreEns&quot;&gt;Pilotage de la e-formation ⭐&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+
+                      <!-- Display Entêtes UEs Master 1 -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+
+                            <div class="titreConteneur">
+                              <h5 class="titreMaster">MASTER 1 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)</h5>
+                              <div class="ueEns">
+                                <h4 class="ue">🟩UEx4</h4>
+                              </div>
+                              <div class="maintitle" style="background-color:#00693c!important">
+                                <h4 class="titreUe"><a href="https://ametice.univ-amu.fr/course/view.php?id=#####"> <span class="titreEns">Développement professionnel ⭐</span></a></h4>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for Entête Master 1 -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;div class=&quot;titreConteneur&quot;&gt;
+  &lt;h5 class=&quot;titreMaster&quot;&gt;MASTER 1 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)&lt;/h5&gt;
+  &lt;div class=&quot;ueEns&quot;&gt;
+    &lt;h4 class=&quot;ue&quot;&gt;🟩UEx4&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;maintitle&quot; style=&quot;background-color:#00693c!important&quot;&gt;
+        &lt;h4 class=&quot;titreUe&quot;&gt;&lt;a href=&quot;https://ametice.univ-amu.fr/course/view.php?id=#####&quot;&gt; &lt;span class=&quot;titreEns&quot;&gt;Développement professionnel ⭐&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <h3 class="p-3 mb-2 bg-primary text-white lead">Entêtes UEs Master 2</h3>
+                      <!-- Display Entêtes UEs Master 2 -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+
+                            <div class="titreConteneur">
+                              <h5 class="titreMaster">MASTER 2 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)</h5>
+                              <div class="ueEns">
+                                <h4 class="ue">🟨UEx1</h4>
+                              </div>
+                              <div class="maintitle" style="background-color:#eab819!important">
+                                <h4 class="titreUe"><a href="https://ametice.univ-amu.fr/course/view.php?id=#####"> <span class="titreEns">Pédagogie du numérique et de l'innovation ⭐</span></a></h4>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for Entête Master 2 -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;div class=&quot;titreConteneur&quot;&gt;
+  &lt;h5 class=&quot;titreMaster&quot;&gt;MASTER 2 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)&lt;/h5&gt;
+  &lt;div class=&quot;ueEns&quot;&gt;
+    &lt;h4 class=&quot;ue&quot;&gt;🟨UEx1&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;maintitle&quot; style=&quot;background-color:#eab819!important&quot;&gt;
+        &lt;h4 class=&quot;titreUe&quot;&gt;&lt;a href=&quot;https://ametice.univ-amu.fr/course/view.php?id=#####&quot;&gt; &lt;span class=&quot;titreEns&quot;&gt;Pédagogie du numérique et de l'innovation ⭐&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+
+                      <!-- Display Entêtes UEs Master 2 -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+
+                            <div class="titreConteneur">
+                              <h5 class="titreMaster">MASTER 2 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)</h5>
+                              <div class="ueEns">
+                                <h4 class="ue">🟦UEx2</h4>
+                              </div>
+                              <div class="maintitle" style="background-color:#0066cc!important">
+                                <h4 class="titreUe"><a href="https://ametice.univ-amu.fr/course/view.php?id=#####"> <span class="titreEns">Conception de ressources et de e-formation ⭐</span></a></h4>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for Entête Master 2 -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;div class=&quot;titreConteneur&quot;&gt;
+  &lt;h5 class=&quot;titreMaster&quot;&gt;MASTER 2 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)&lt;/h5&gt;
+  &lt;div class=&quot;ueEns&quot;&gt;
+    &lt;h4 class=&quot;ue&quot;&gt;🟦UEx2&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;maintitle&quot; style=&quot;background-color:#0066cc!important&quot;&gt;
+        &lt;h4 class=&quot;titreUe&quot;&gt;&lt;a href=&quot;https://ametice.univ-amu.fr/course/view.php?id=#####&quot;&gt; &lt;span class=&quot;titreEns&quot;&gt;Conception de ressources et de e-formation ⭐&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+
+                      <!-- Display Entêtes UEs Master 2 -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+
+                            <div class="titreConteneur">
+                              <h5 class="titreMaster">MASTER 2 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)</h5>
+                              <div class="ueEns">
+                                <h4 class="ue">🟥UEx3</h4>
+                              </div>
+                              <div class="maintitle" style="background-color:#cf2f44!important">
+                                <h4 class="titreUe"><a href="https://ametice.univ-amu.fr/course/view.php?id=#####"> <span class="titreEns">Pilotage de la e-formation ⭐</span></a></h4>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for Entête Master 2 -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;div class=&quot;titreConteneur&quot;&gt;
+  &lt;h5 class=&quot;titreMaster&quot;&gt;MASTER 2 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)&lt;/h5&gt;
+  &lt;div class=&quot;ueEns&quot;&gt;
+    &lt;h4 class=&quot;ue&quot;&gt;🟥UEx3&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;maintitle&quot; style=&quot;background-color:#cf2f44!important&quot;&gt;
+        &lt;h4 class=&quot;titreUe&quot;&gt;&lt;a href=&quot;https://ametice.univ-amu.fr/course/view.php?id=#####&quot;&gt; &lt;span class=&quot;titreEns&quot;&gt;Pilotage de la e-formation ⭐&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+
+                      <!-- Display Entêtes UEs Master 2 -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+
+                            <div class="titreConteneur">
+                              <h5 class="titreMaster">MASTER 2 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)</h5>
+                              <div class="ueEns">
+                                <h4 class="ue">🟩UEx4</h4>
+                              </div>
+                              <div class="maintitle" style="background-color:#00693c!important">
+                                <h4 class="titreUe"><a href="https://ametice.univ-amu.fr/course/view.php?id=#####"> <span class="titreEns">Développement professionnel ⭐</span></a></h4>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for Entête Master 2 -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+
+&lt;div class=&quot;titreConteneur&quot;&gt;
+  &lt;h5 class=&quot;titreMaster&quot;&gt;MASTER 2 | FAD Responsable de formation option Ingénieur pédagogique numérique et innovation (NEO)&lt;/h5&gt;
+  &lt;div class=&quot;ueEns&quot;&gt;
+    &lt;h4 class=&quot;ue&quot;&gt;🟩UEx4&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;maintitle&quot; style=&quot;background-color:#00693c!important&quot;&gt;
+        &lt;h4 class=&quot;titreUe&quot;&gt;&lt;a href=&quot;https://ametice.univ-amu.fr/course/view.php?id=#####&quot;&gt; &lt;span class=&quot;titreEns&quot;&gt;Développement professionnel ⭐&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
 
                     </div> <!--⏹|🎫|👚-->
                   </div> <!--⏹|🎫|👙-->
@@ -3180,10 +3837,93 @@ NEO-C5 &lt;small&gt;⭐⭐⭐⭐&lt;/small&gt;
                       </div>
                       <hr>
 
+
+
                     </div> <!--⏹|🎫|👚-->
                   </div> <!--⏹|🎫|👙 end of collapse -->
               
                 </div> <!--⏹|🎟️|📁|🎟️ end of card -->
+
+                                <div class="card"> <!--▶️|🎟️|📁|🎟️--><!--🀦 Compétences NEO ✊-->
+
+                  <div class="card-header" id="headingShieldsIOBadges"> <!--▶️|🎫|🤯-->
+                    <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseShieldsIOBadges" aria-expanded="false" aria-controls="collapseShieldsIOBadges">
+                    <!--🎟️|📁 title of this card -->🛡️ Shields.io Badges ✊
+                    </button>
+                    </h2>
+                  </div> <!--⏹|🎫|🤯-->
+
+                  <div id="collapseShieldsIOBadges" class="collapse" aria-labelledby="headingShieldsIOBadges" data-parent="#accordionFORMATION"> <!--▶️|🎫|👙-->
+                    <div class="card-body"> <!--▶️|🎫|👚-->
+
+                      <!-- Display NameTheShit -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+
+                            <a href="https://inspe.univ-amu.fr/fr/formations/devenir-ingenieur-pedagogique-numerique" target="_blank"><img alt="NEO" src="https://shields.io/badge/master-neo-blue?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAOCAMAAAD+MweGAAAB5lBMVEUAAAC0tLS5ublCQkJubm6RkZGQkJCNjY2KioqHh4d2dnYhISF0dHT///88OztWVlZaWlp6enknJyfW1tY6Ojq/v7/Hx8eFhYVPT0/09PRLS0twcHDv7+9/f3/s7Oy1tbXo6OhycnLk5OTz8/OXl5ff39+BgYGmpqbi4uJ6enq4uLjBwcGtra0AAAAvLy+7u7u5ubmenp7BwcGsrKx8fHzBwcFmZmajo6O+vr5qamqWlpacnJyampqYmJiUlJR2dXRfX1/AwMCpqalRUVG6urq2tralpaXIyMi8vLy+vr7Hx8fT1davrawAAAAAAAC8vLzOzs7CwsK7u7t4eHitra20tLQmJiZRUVE9PT2enZuVr8i8vLteWVOmpqbCwsJ5eXmBgYFERESsrKy8vLyppqJ5ptWAo8e+wsWSkZDDw8OampqsrKy7u7uopKF9qdbX2t26urm6urqnpKB+qda8v8O9vLy1tbVdXV2ioaDAz9+RtNiXud3O2OO6ubmzs7PU1NSXl5e7u7uhoaHAv76MiYXLysiwr66enp6jo6OdnZ1qamqgoKC1tbWwsLC1tbWrq6u6urqdnZ3ExMS7u7tpaWmCgoKPj492dnatra2MjIyZtdIgcMISbswYbsVllMUTbssTbcpelc1EMndLAAAAmnRSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACGQsFsEC6GjecZXLMMceqgXLy4sKygYH8FKFZ+Nf9a/wNHQVAILtdrCqiSPkhcbGnfwfQ1gvEE4EY+EYv79plDCR5CFYf73nIVg/s7EbApf/Pr+/sLP8UOEYbty3oVocWUSYKaSj5KEXem2GmBWPKlAyVrvxQAAALZJREFUCFtjZIADRkZ1RhBAiDBrgwUYWSDUN+6vPBqMjNe1GBktISLngNgAwnQDYgYQ4wijDUQkBEw6HmBk3BgAYm1iTGJcxc7oz2h2GsRdw8j4lTGbceFnyRBGPUbGi4x3zzI+ZWDMZpvzWSaMUYeR8TJQ0bLHEBG5KIiZjIzzHwJFxHo+KyTBRKbfh4goZYKkv71i+CN9h4Gxn7H2s2oOUGTS888Q701lLP+sXsDI2P8UIsAAAK8VMV+GeCnkAAAAAElFTkSuQmCC&labelColor=black"></a>           
+                            <hr>
+                            <a href="https://www.linkedin.com/school/master-neo/" target="_blank"><img alt="LinkedIn" src="https://shields.io/badge/linkedin-master neo-black?logo=linkedin&labelColor=0a66c2&style=for-the-badge"></a>           
+                            <hr>
+                            <a href="https://www.youtube.com/@inspe-master-meef-neo" target="_blank"><img alt="YouTube Channel" src="https://shields.io/badge/youtube-@inspe--master--meef--neo-black?logo=youtube&labelColor=ff0000&style=for-the-badge"></a>
+
+                            <a href="https://www.youtube.com/@inspe-master-meef-neo" target="_blank"><img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UCxQ2UU6QyLEcbLO57qEOQIg?style=social"></a>
+                            <hr>
+                            <a href="https://github.com/inspe-master-meef-neo" target="_blank"><img alt="GitHub" src="https://shields.io/badge/github-inspe--master--meef--neo-black?logo=github&labelColor=9032ae&style=for-the-badge"></a>  
+                            <hr>
+                            <img alt="Discord" src="https://shields.io/badge/discord-black?logo=github&labelColor=5865F2&style=for-the-badge">
+
+                            <img alt="Discord" src="https://img.shields.io/discord/1070728765921042443?logo=discord&logoColor=fff&style=for-the-badge">
+                            <hr>
+
+                            <img alt="HTML" src="https://shields.io/badge/-HTML-black?logo=html5&logoColor=white&labelColor=black&color=E34F26&style=plastic">
+                            <img alt="CSS" src="https://shields.io/badge/-CSS-black?logo=css3&logoColor=white&labelColor=black&color=1572B6&style=plastic">
+                            <img alt="JS" src="https://shields.io/badge/-JS-black?logo=javascript&logoColor=white&labelColor=black&color=F7DF1E&style=plastic">
+                            <img alt="Bootstrap" src="https://shields.io/badge/-Bootstrap 4-black?logo=bootstrap&logoColor=white&labelColor=black&color=7952B3&style=plastic">
+                            <hr>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for NameTheShit -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;a href=&quot;https://inspe.univ-amu.fr/fr/formations/devenir-ingenieur-pedagogique-numerique&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;NEO&quot; src=&quot;https://shields.io/badge/master-neo-blue?style=for-the-badge&amp;logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAOCAMAAAD+MweGAAAB5lBMVEUAAAC0tLS5ublCQkJubm6RkZGQkJCNjY2KioqHh4d2dnYhISF0dHT///88OztWVlZaWlp6enknJyfW1tY6Ojq/v7/Hx8eFhYVPT0/09PRLS0twcHDv7+9/f3/s7Oy1tbXo6OhycnLk5OTz8/OXl5ff39+BgYGmpqbi4uJ6enq4uLjBwcGtra0AAAAvLy+7u7u5ubmenp7BwcGsrKx8fHzBwcFmZmajo6O+vr5qamqWlpacnJyampqYmJiUlJR2dXRfX1/AwMCpqalRUVG6urq2tralpaXIyMi8vLy+vr7Hx8fT1davrawAAAAAAAC8vLzOzs7CwsK7u7t4eHitra20tLQmJiZRUVE9PT2enZuVr8i8vLteWVOmpqbCwsJ5eXmBgYFERESsrKy8vLyppqJ5ptWAo8e+wsWSkZDDw8OampqsrKy7u7uopKF9qdbX2t26urm6urqnpKB+qda8v8O9vLy1tbVdXV2ioaDAz9+RtNiXud3O2OO6ubmzs7PU1NSXl5e7u7uhoaHAv76MiYXLysiwr66enp6jo6OdnZ1qamqgoKC1tbWwsLC1tbWrq6u6urqdnZ3ExMS7u7tpaWmCgoKPj492dnatra2MjIyZtdIgcMISbswYbsVllMUTbssTbcpelc1EMndLAAAAmnRSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACGQsFsEC6GjecZXLMMceqgXLy4sKygYH8FKFZ+Nf9a/wNHQVAILtdrCqiSPkhcbGnfwfQ1gvEE4EY+EYv79plDCR5CFYf73nIVg/s7EbApf/Pr+/sLP8UOEYbty3oVocWUSYKaSj5KEXem2GmBWPKlAyVrvxQAAALZJREFUCFtjZIADRkZ1RhBAiDBrgwUYWSDUN+6vPBqMjNe1GBktISLngNgAwnQDYgYQ4wijDUQkBEw6HmBk3BgAYm1iTGJcxc7oz2h2GsRdw8j4lTGbceFnyRBGPUbGi4x3zzI+ZWDMZpvzWSaMUYeR8TJQ0bLHEBG5KIiZjIzzHwJFxHo+KyTBRKbfh4goZYKkv71i+CN9h4Gxn7H2s2oOUGTS888Q701lLP+sXsDI2P8UIsAAAK8VMV+GeCnkAAAAAElFTkSuQmCC&amp;labelColor=black&quot;&gt;&lt;/a&gt;           
+
+&lt;a href=&quot;https://www.linkedin.com/school/master-neo/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;LinkedIn&quot; src=&quot;https://shields.io/badge/linkedin-master neo-black?logo=linkedin&amp;labelColor=0a66c2&amp;style=for-the-badge&quot;&gt;&lt;/a&gt;           
+
+&lt;a href=&quot;https://www.youtube.com/@inspe-master-meef-neo&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;YouTube Channel&quot; src=&quot;https://shields.io/badge/youtube-@inspe--master--meef--neo-black?logo=youtube&amp;labelColor=ff0000&amp;style=for-the-badge&quot;&gt;&lt;/a&gt;
+
+&lt;a href=&quot;https://www.youtube.com/@inspe-master-meef-neo&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;YouTube Channel Subscribers&quot; src=&quot;https://img.shields.io/youtube/channel/subscribers/UCxQ2UU6QyLEcbLO57qEOQIg?style=social&quot;&gt;&lt;/a&gt;
+
+&lt;a href=&quot;https://github.com/inspe-master-meef-neo&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;GitHub&quot; src=&quot;https://shields.io/badge/github-inspe--master--meef--neo-black?logo=github&amp;labelColor=9032ae&amp;style=for-the-badge&quot;&gt;&lt;/a&gt;  
+
+&lt;img alt=&quot;Discord&quot; src=&quot;https://shields.io/badge/discord-black?logo=github&amp;labelColor=5865F2&amp;style=for-the-badge&quot;&gt;
+
+&lt;img alt=&quot;Discord&quot; src=&quot;https://img.shields.io/discord/1070728765921042443?logo=discord&amp;logoColor=fff&amp;style=for-the-badge&quot;&gt;
+
+&lt;img alt=&quot;HTML&quot; src=&quot;https://shields.io/badge/-HTML-black?logo=html5&amp;logoColor=white&amp;labelColor=black&amp;color=E34F26&amp;style=plastic&quot;&gt;
+
+&lt;img alt=&quot;CSS&quot; src=&quot;https://shields.io/badge/-CSS-black?logo=css3&amp;logoColor=white&amp;labelColor=black&amp;color=1572B6&amp;style=plastic&quot;&gt;
+
+&lt;img alt=&quot;JS&quot; src=&quot;https://shields.io/badge/-JS-black?logo=javascript&amp;logoColor=white&amp;labelColor=black&amp;color=F7DF1E&amp;style=plastic&quot;&gt;
+
+&lt;img alt=&quot;Bootstrap&quot; src=&quot;https://shields.io/badge/-Bootstrap 4-black?logo=bootstrap&amp;logoColor=white&amp;labelColor=black&amp;color=7952B3&amp;style=plastic&quot;&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div> <!--⏹|🎫|👚-->
+                  </div> <!--⏹|🎫|👙-->
+                
+                </div> <!--⏹|🎟️|📁|🎟️-->
 
               </div> <!--⏹|🗂️|🪗 end of subaccordion -->
 
@@ -3194,15 +3934,15 @@ NEO-C5 &lt;small&gt;⭐⭐⭐⭐&lt;/small&gt;
 
         <div class="card"> <!--▶️|🎟️|📁--><!--🧰 TOOLBOX-->
 
-          <div class="card-header" id="headingToolbox"> <!--▶️|🎫|🤯-->
+          <div class="card-header" id="headingTOOLBOX"> <!--▶️|🎫|🤯-->
             <h1 class="mb-0">
-              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseToolbox" aria-expanded="true" aria-controls="collapseToolbox">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTOOLBOX" aria-expanded="true" aria-controls="collapseTOOLBOX">
                 🧰 TOOLBOX
               </button>
             </h1>
           </div> <!--⏹|🎫|🤯-->
 
-          <div id="collapseToolbox" class="collapse" aria-labelledby="headingToolbox" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
+          <div id="collapseTOOLBOX" class="collapse" aria-labelledby="headingTOOLBOX" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
             <div class="card-body"> <!--▶️|🎫|👚-->
 
               <!-- beginning of subaccordion -->
@@ -6618,6 +7358,1828 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
                   </div> <!--⏹|🎫|👙 end of collapse -->
 
                 </div> <!--⏹|🎟️|📁|🎟️ end of card -->
+
+                <div class="card"> <!--▶️|🎟️|📁|🎟️--><!--🕵️ SCROLLSPY-->
+                    
+                  <div class="card-header" id="headingScrollspy"> <!--▶️|🎫|🤯-->
+                    <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseheadingScrollspy" aria-expanded="false" aria-controls="collapseheadingScrollspy">
+                    <!--🎟️|📁 title of this card -->🕵️ SCROLLSPY
+                    </button>
+                    </h2>
+                  </div> <!--⏹|🎫|🤯-->
+                    
+                  <div id="collapseheadingScrollspy" class="collapse" aria-labelledby="headingheadingScrollspy" data-parent="#accordionTOOLBOX"> <!--▶️|🎫|👙-->
+                    <div class="card-body"> <!--▶️|🎫|👚-->
+
+                      <!-- Display ScrollspyInNavbar -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Scrollspy example with horizontal navbar</h3>
+
+                            <!-- Custom css that makes this example work like it does: -->
+                            <style type="text/css" scoped="">
+                              .scrollspy-example {
+                                position: relative;
+                                height: 200px;
+                                margin-top: .5rem;
+                                overflow: auto;
+                              }
+                            </style>
+
+                            <!-- Actual scrollspy markup: -->
+                            <nav id="navbar-example1" class="navbar navbar-light bg-light">
+                              <h3 class="navbar-brand">Project Name</h3>
+                              <ul class="nav nav-pills">
+                                <li class="nav-item"><a class="nav-link active" href="#verse1">Verse 1</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#verse2">Verse 2</a></li>
+                              </ul>
+                            </nav>
+                            <div data-spy="scroll" data-target="#navbar-example1" data-offset="0" class="scrollspy-example">
+                              <h4 id="verse1">Verse 1</h4>
+                              <p>May <br> the <br> gods <br> forgive <br> me.</p>
+                              <h4 id="verse2">Verse 2</h4>
+                              <p>For <br> this <br> rampant <br> abuse <br> of <br> br-tags.</p>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for ScrollspyInNavbar -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;nav id=&quot;navbar-example1&quot; class=&quot;navbar navbar-light bg-light&quot;&gt;
+  &lt;h3 class=&quot;navbar-brand&quot;&gt;Project Name&lt;/h3&gt;
+  &lt;ul class=&quot;nav nav-pills&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#verse1&quot;&gt;Verse 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#verse2&quot;&gt;Verse 2&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;div data-spy=&quot;scroll&quot; data-target=&quot;#navbar-example1&quot; data-offset=&quot;0&quot; class=&quot;scrollspy-example&quot;&gt;
+  &lt;h4 id=&quot;verse1&quot;&gt;Verse 1&lt;/h4&gt;
+  &lt;p&gt;May &lt;br&gt; the &lt;br&gt; gods &lt;br&gt; forgive &lt;br&gt; me.&lt;/p&gt;
+  &lt;h4 id=&quot;verse2&quot;&gt;Verse 2&lt;/h4&gt;
+  &lt;p&gt;For &lt;br&gt; this &lt;br&gt; rampant &lt;br&gt; abuse &lt;br&gt; of &lt;br&gt; br-tags.&lt;/p&gt;
+&lt;/div&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <!-- Display ScrollspyInNavbarDrop -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Scrollspy in navbar with dropdown</h3>
+
+                            <nav id="navbar-example2" class="navbar navbar-light bg-light">
+                              <a class="navbar-brand" href="#">Navbar</a>
+                              <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#fat">@fat</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#mdo">@mdo</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="">Dropdown</a>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#one">one</a>
+                                    <a class="dropdown-item" href="#two">two</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item active" href="#three">three</a>
+                                  </div>
+                                </li>
+                              </ul>
+                            </nav>
+                            <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+                              <h4 id="fat">@fat</h4>
+                              <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+                              <h4 id="mdo">@mdo</h4>
+                              <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
+                              <h4 id="one">one</h4>
+                              <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
+                              <h4 id="two">two</h4>
+                              <p>In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
+                              <h4 id="three">three</h4>
+                              <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+                              <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+                              </p>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for ScrollspyInNavbarDrop -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;nav id=&quot;navbar-example2&quot; class=&quot;navbar navbar-light bg-light&quot;&gt;
+  &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
+  &lt;ul class=&quot;nav nav-pills&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+      &lt;a class=&quot;nav-link&quot; href=&quot;#fat&quot;&gt;@fat&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+      &lt;a class=&quot;nav-link&quot; href=&quot;#mdo&quot;&gt;@mdo&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item dropdown&quot;&gt;
+      &lt;a class=&quot;nav-link dropdown-toggle active&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; style=&quot;&quot;&gt;Dropdown&lt;/a&gt;
+      &lt;div class=&quot;dropdown-menu&quot;&gt;
+        &lt;a class=&quot;dropdown-item&quot; href=&quot;#one&quot;&gt;one&lt;/a&gt;
+        &lt;a class=&quot;dropdown-item&quot; href=&quot;#two&quot;&gt;two&lt;/a&gt;
+        &lt;div role=&quot;separator&quot; class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+        &lt;a class=&quot;dropdown-item active&quot; href=&quot;#three&quot;&gt;three&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;div data-spy=&quot;scroll&quot; data-target=&quot;#navbar-example2&quot; data-offset=&quot;0&quot; class=&quot;scrollspy-example&quot;&gt;
+  &lt;h4 id=&quot;fat&quot;&gt;@fat&lt;/h4&gt;
+  &lt;p&gt;Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.&lt;/p&gt;
+  &lt;h4 id=&quot;mdo&quot;&gt;@mdo&lt;/h4&gt;
+  &lt;p&gt;Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.&lt;/p&gt;
+  &lt;h4 id=&quot;one&quot;&gt;one&lt;/h4&gt;
+  &lt;p&gt;Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.&lt;/p&gt;
+  &lt;h4 id=&quot;two&quot;&gt;two&lt;/h4&gt;
+  &lt;p&gt;In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.&lt;/p&gt;
+  &lt;h4 id=&quot;three&quot;&gt;three&lt;/h4&gt;
+  &lt;p&gt;Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.&lt;/p&gt;
+  &lt;p&gt;Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+  &lt;/p&gt;
+&lt;/div&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <!-- Display ScrollspyWithNestedNav -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Scrollspy with nested nav</h3>
+
+                            <div class="row">
+                              <div class="col-4">
+                                <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column">
+                                  <a class="navbar-brand" href="#">Navbar</a>
+                                  <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link active" href="#item-1">Item 1</a>
+                                    <nav class="nav nav-pills flex-column">
+                                      <a class="nav-link ml-3 my-1 active" href="#item-1-1">Item 1-1</a>
+                                      <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+                                    </nav>
+                                    <a class="nav-link" href="#item-2">Item 2</a>
+                                    <a class="nav-link" href="#item-3">Item 3</a>
+                                    <nav class="nav nav-pills flex-column">
+                                      <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
+                                      <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+                                    </nav>
+                                  </nav>
+                                </nav>
+                              </div>
+                              <div class="col-8">
+                                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0" class="scrollspy-example-2">
+                                  <h4 id="item-1">Item 1</h4>
+                                  <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit dolore.</p>
+                                  <h5 id="item-1-1">Item 1-1</h5>
+                                  <p>Amet tempor mollit aliquip pariatur excepteur commodo do ea cillum commodo Lorem et occaecat elit qui et. Aliquip labore ex ex esse voluptate occaecat Lorem ullamco deserunt. Aliqua cillum excepteur irure consequat id quis ea. Sit proident ullamco aute magna pariatur nostrud labore. Reprehenderit aliqua commodo eiusmod aliquip est do duis amet proident magna consectetur consequat eu commodo fugiat non quis. Enim aliquip exercitation ullamco adipisicing voluptate excepteur minim exercitation minim minim commodo adipisicing exercitation officia nisi adipisicing. Anim id duis qui consequat labore adipisicing sint dolor elit cillum anim et fugiat.</p>
+                                  <h5 id="item-1-2">Item 2-2</h5>
+                                  <p>Cillum nisi deserunt magna eiusmod qui eiusmod velit voluptate pariatur laborum sunt enim. Irure laboris mollit consequat incididunt sint et culpa culpa incididunt adipisicing magna magna occaecat. Nulla ipsum cillum eiusmod sint elit excepteur ea labore enim consectetur in labore anim. Proident ullamco ipsum esse elit ut Lorem eiusmod dolor et eiusmod. Anim occaecat nulla in non consequat eiusmod velit incididunt.</p>
+                                  <h4 id="item-2">Item 2</h4>
+                                  <p>Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
+                                  <h4 id="item-3">Item 3</h4>
+                                  <p>Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
+                                  <h5 id="item-3-1">Item 3-1</h5>
+                                  <p>Deserunt quis elit Lorem eiusmod amet enim enim amet minim Lorem proident nostrud. Ea id dolore anim exercitation aute fugiat labore voluptate cillum do laboris labore. Ex velit exercitation nisi enim labore reprehenderit labore nostrud ut ut. Esse officia sunt duis aliquip ullamco tempor eiusmod deserunt irure nostrud irure. Ullamco proident veniam laboris ea consectetur magna sunt ex exercitation aliquip minim enim culpa occaecat exercitation. Est tempor excepteur aliquip laborum consequat do deserunt laborum esse eiusmod irure proident ipsum esse qui.</p>
+                                  <h5 id="item-3-2">Item 3-2</h5>
+                                  <p>Labore sit culpa commodo elit adipisicing sit aliquip elit proident voluptate minim mollit nostrud aute reprehenderit do. Mollit excepteur eu Lorem ipsum anim commodo sint labore Lorem in exercitation velit incididunt. Occaecat consectetur nisi in occaecat proident minim enim sunt reprehenderit exercitation cupidatat et do officia. Aliquip consequat ad labore labore mollit ut amet. Sit pariatur tempor proident in veniam culpa aliqua excepteur elit magna fugiat eiusmod amet officia.</p>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for ScrollspyWithNestedNav -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-4&quot;&gt;
+    &lt;nav id=&quot;navbar-example3&quot; class=&quot;navbar navbar-light bg-light flex-column&quot;&gt;
+      &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
+      &lt;nav class=&quot;nav nav-pills flex-column&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; href=&quot;#item-1&quot;&gt;Item 1&lt;/a&gt;
+        &lt;nav class=&quot;nav nav-pills flex-column&quot;&gt;
+          &lt;a class=&quot;nav-link ml-3 my-1 active&quot; href=&quot;#item-1-1&quot;&gt;Item 1-1&lt;/a&gt;
+          &lt;a class=&quot;nav-link ml-3 my-1&quot; href=&quot;#item-1-2&quot;&gt;Item 1-2&lt;/a&gt;
+        &lt;/nav&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#item-2&quot;&gt;Item 2&lt;/a&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#item-3&quot;&gt;Item 3&lt;/a&gt;
+        &lt;nav class=&quot;nav nav-pills flex-column&quot;&gt;
+          &lt;a class=&quot;nav-link ml-3 my-1&quot; href=&quot;#item-3-1&quot;&gt;Item 3-1&lt;/a&gt;
+          &lt;a class=&quot;nav-link ml-3 my-1&quot; href=&quot;#item-3-2&quot;&gt;Item 3-2&lt;/a&gt;
+        &lt;/nav&gt;
+      &lt;/nav&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-8&quot;&gt;
+    &lt;div data-spy=&quot;scroll&quot; data-target=&quot;#navbar-example3&quot; data-offset=&quot;0&quot; class=&quot;scrollspy-example-2&quot;&gt;
+      &lt;h4 id=&quot;item-1&quot;&gt;Item 1&lt;/h4&gt;
+      &lt;p&gt;Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit dolore.&lt;/p&gt;
+      &lt;h5 id=&quot;item-1-1&quot;&gt;Item 1-1&lt;/h5&gt;
+      &lt;p&gt;Amet tempor mollit aliquip pariatur excepteur commodo do ea cillum commodo Lorem et occaecat elit qui et. Aliquip labore ex ex esse voluptate occaecat Lorem ullamco deserunt. Aliqua cillum excepteur irure consequat id quis ea. Sit proident ullamco aute magna pariatur nostrud labore. Reprehenderit aliqua commodo eiusmod aliquip est do duis amet proident magna consectetur consequat eu commodo fugiat non quis. Enim aliquip exercitation ullamco adipisicing voluptate excepteur minim exercitation minim minim commodo adipisicing exercitation officia nisi adipisicing. Anim id duis qui consequat labore adipisicing sint dolor elit cillum anim et fugiat.&lt;/p&gt;
+      &lt;h5 id=&quot;item-1-2&quot;&gt;Item 2-2&lt;/h5&gt;
+      &lt;p&gt;Cillum nisi deserunt magna eiusmod qui eiusmod velit voluptate pariatur laborum sunt enim. Irure laboris mollit consequat incididunt sint et culpa culpa incididunt adipisicing magna magna occaecat. Nulla ipsum cillum eiusmod sint elit excepteur ea labore enim consectetur in labore anim. Proident ullamco ipsum esse elit ut Lorem eiusmod dolor et eiusmod. Anim occaecat nulla in non consequat eiusmod velit incididunt.&lt;/p&gt;
+      &lt;h4 id=&quot;item-2&quot;&gt;Item 2&lt;/h4&gt;
+      &lt;p&gt;Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.&lt;/p&gt;
+      &lt;h4 id=&quot;item-3&quot;&gt;Item 3&lt;/h4&gt;
+      &lt;p&gt;Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.&lt;/p&gt;
+      &lt;h5 id=&quot;item-3-1&quot;&gt;Item 3-1&lt;/h5&gt;
+      &lt;p&gt;Deserunt quis elit Lorem eiusmod amet enim enim amet minim Lorem proident nostrud. Ea id dolore anim exercitation aute fugiat labore voluptate cillum do laboris labore. Ex velit exercitation nisi enim labore reprehenderit labore nostrud ut ut. Esse officia sunt duis aliquip ullamco tempor eiusmod deserunt irure nostrud irure. Ullamco proident veniam laboris ea consectetur magna sunt ex exercitation aliquip minim enim culpa occaecat exercitation. Est tempor excepteur aliquip laborum consequat do deserunt laborum esse eiusmod irure proident ipsum esse qui.&lt;/p&gt;
+      &lt;h5 id=&quot;item-3-2&quot;&gt;Item 3-2&lt;/h5&gt;
+      &lt;p&gt;Labore sit culpa commodo elit adipisicing sit aliquip elit proident voluptate minim mollit nostrud aute reprehenderit do. Mollit excepteur eu Lorem ipsum anim commodo sint labore Lorem in exercitation velit incididunt. Occaecat consectetur nisi in occaecat proident minim enim sunt reprehenderit exercitation cupidatat et do officia. Aliquip consequat ad labore labore mollit ut amet. Sit pariatur tempor proident in veniam culpa aliqua excepteur elit magna fugiat eiusmod amet officia.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div> <!--⏹|🎫|👚-->
+                  </div> <!--⏹|🎫|👙 end of collapse -->
+
+                </div> <!--⏹|🎟️|📁|🎟️ end of card -->
+
+                <div class="card"> <!--▶️|🎟️|📁|🎟️--><!--𓊂 TABLES-->
+                    
+                  <div class="card-header" id="headingTables"> <!--▶️|🎫|🤯-->
+                    <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseheadingTables" aria-expanded="false" aria-controls="collapseheadingTables">
+                    <!--🎟️|📁 title of this card -->𓊂 TABLES
+                    </button>
+                    </h2>
+                  </div> <!--⏹|🎫|🤯-->
+                    
+                  <div id="collapseheadingTables" class="collapse" aria-labelledby="headingheadingTables" data-parent="#accordionTOOLBOX"> <!--▶️|🎫|👙-->
+                    <div class="card-body"> <!--▶️|🎫|👚-->
+
+                      <!-- Display SimpleTable -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Simple Table</h3>
+
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>Larry</td>
+                                  <td>the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for SimpleTable -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;table class=&quot;table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+      &lt;td&gt;Larry&lt;/td&gt;
+      &lt;td&gt;the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <!-- Display DarkTable -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Dark Table</h3>
+
+                            <table class="table table-dark">
+                              <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>Larry</td>
+                                  <td>the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for DarkTable -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;table class=&quot;table table-dark&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+      &lt;td&gt;Larry&lt;/td&gt;
+      &lt;td&gt;the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <!-- Display TableHeadOptions -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Table head options</h3>
+
+                            <table class="table">
+                              <thead class="thead-dark">
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>Larry</td>
+                                  <td>the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <table class="table">
+                              <thead class="thead-light">
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>Larry</td>
+                                  <td>the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for TableHeadOptions -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;table class=&quot;table&quot;&gt;
+  &lt;thead class=&quot;thead-dark&quot;&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+      &lt;td&gt;Larry&lt;/td&gt;
+      &lt;td&gt;the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table class=&quot;table&quot;&gt;
+  &lt;thead class=&quot;thead-light&quot;&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+      &lt;td&gt;Larry&lt;/td&gt;
+      &lt;td&gt;the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <!-- Display StrippedTable -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Stripped Table</h3>
+
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>Larry</td>
+                                  <td>the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for StrippedTable -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;table class=&quot;table table-striped&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+      &lt;td&gt;Larry&lt;/td&gt;
+      &lt;td&gt;the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <!-- Display StrippedDarkTable -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Stripped Dark Table</h3>
+                            <!-- ⚠️😱 custom_newMoodle.css is overiding with !important here 😭 -->
+                            <table class="table table-striped table-dark">
+                              <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td><kbd>⚠️😱😭 custom_newMoodle.css</kbd></td>
+                                  <td><kbd>⚠️😱😭 custom_newMoodle.css</kbd></td>
+                                  <td><kbd>⚠️😱😭 custom_newMoodle.css</kbd></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>Larry</td>
+                                  <td>the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for StrippedDarkTable -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;table class=&quot;table table-striped table-dark&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+      &lt;td&gt;Larry&lt;/td&gt;
+      &lt;td&gt;the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <!-- Display BorderedTables -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Bordered tables</h3>
+
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td colspan="2">Larry the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <hr>
+                            <table class="table table-bordered table-dark">
+                              <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td colspan="2">Larry the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for BorderedTables -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;table class=&quot;table table-bordered&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+      &lt;td colspan=&quot;2&quot;&gt;Larry the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table class=&quot;table table-bordered table-dark&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+      &lt;td colspan=&quot;2&quot;&gt;Larry the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <!-- Display HoverableRows -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Hoverables rows</h3>
+
+                            <table class="table table-hover">
+                              <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td colspan="2">Larry the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <hr>
+                            <table class="table table-hover table-dark">
+                              <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td colspan="2"><kbd>⚠️😱😭 custom_newMoodle.css</kbd></td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for StrippedDarkTable -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;table class=&quot;table table-hover&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+      &lt;td colspan=&quot;2&quot;&gt;Larry the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table class=&quot;table table-hover table-dark&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+      &lt;td colspan=&quot;2&quot;&gt;Larry the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <!-- Display SmallTables -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Small tables</h3>
+
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td colspan="2">Larry the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <hr>
+                            <table class="table table-sm table-dark">
+                              <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td colspan="2">Larry the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for SmallTables -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;table class=&quot;table table-sm&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+      &lt;td colspan=&quot;2&quot;&gt;Larry the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table class=&quot;table table-sm table-dark&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+      &lt;td colspan=&quot;2&quot;&gt;Larry the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <!-- Display ColoredRowsLight -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Colored rows light</h3>
+
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Class</th>
+                                  <th scope="col">Heading</th>
+                                  <th scope="col">Heading</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="table-active">
+                                  <th scope="row">Active</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Default</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+
+
+                                <tr class="table-primary">
+                                  <th scope="row">Primary</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                                <tr class="table-secondary">
+                                  <th scope="row">Secondary</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                                <tr class="table-success">
+                                  <th scope="row">Success</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                                <tr class="table-danger">
+                                  <th scope="row">Danger</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                                <tr class="table-warning">
+                                  <th scope="row">Warning</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                                <tr class="table-info">
+                                  <th scope="row">Info</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                                <tr class="table-light">
+                                  <th scope="row">Light</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                                <tr class="table-dark">
+                                  <th scope="row">Dark</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for ColoredRowsLight -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;table class=&quot;table&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;col&quot;&gt;Class&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr class=&quot;table-active&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;Active&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;Default&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+
+
+      &lt;tr class=&quot;table-primary&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;Primary&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;table-secondary&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;Secondary&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;table-success&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;Success&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;table-danger&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;Danger&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;table-warning&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;Warning&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;table-info&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;Info&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;table-light&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;Light&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;table-dark&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;Dark&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <!-- Display ColoredRowsDark -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Colored rows dark</h3>
+
+                            <table class="table table-dark">
+                              <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">Heading</th>
+                                  <th scope="col">Heading</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="bg-primary">
+                                  <th scope="row">1</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                                <tr class="bg-success">
+                                  <th scope="row">3</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">4</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                                <tr class="bg-info">
+                                  <th scope="row">5</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">6</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                                <tr class="bg-warning">
+                                  <th scope="row">7</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">8</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                                <tr class="bg-danger">
+                                  <th scope="row">9</th>
+                                  <td>Cell</td>
+                                  <td>Cell</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for ColoredRowsDark -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;table class=&quot;table table-dark&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr class=&quot;bg-primary&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;bg-success&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;4&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;bg-info&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;5&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;6&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;bg-warning&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;7&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;8&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class=&quot;bg-danger&quot;&gt;
+        &lt;th scope=&quot;row&quot;&gt;9&lt;/th&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+        &lt;td&gt;Cell&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                    </div> <!--⏹|🎫|👚-->
+                  </div> <!--⏹|🎫|👙 end of collapse -->
+
+                </div> <!--⏹|🎟️|📁|🎟️ end of card -->
+
+                <div class="card"> <!--▶️|🎟️|📁|🎟️--><!--⏏ TOOLTIPS-->
+                    
+                  <div class="card-header" id="headingTooltips"> <!--▶️|🎫|🤯-->
+                    <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseheadingTooltips" aria-expanded="false" aria-controls="collapseheadingTooltips">
+                    <!--🎟️|📁 title of this card -->⏏ TOOLTIPS
+                    </button>
+                    </h2>
+                  </div> <!--⏹|🎫|🤯-->
+                    
+                  <div id="collapseheadingTooltips" class="collapse" aria-labelledby="headingheadingTooltips" data-parent="#accordionTOOLBOX"> <!--▶️|🎫|👙-->
+                    <div class="card-body"> <!--▶️|🎫|👚-->
+
+                      <!-- Display Tooltips -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                              Tooltip on top
+                            </button>
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                              Tooltip on right
+                            </button>
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                              Tooltip on bottom
+                            </button>
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                              Tooltip on left
+                            </button>
+
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+                              Tooltip with HTML
+                            </button>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for Tooltips -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Tooltip on top&quot;&gt;
+  Tooltip on top
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;right&quot; title=&quot;Tooltip on right&quot;&gt;
+  Tooltip on right
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Tooltip on bottom&quot;&gt;
+  Tooltip on bottom
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;Tooltip on left&quot;&gt;
+  Tooltip on left
+&lt;/button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-toggle=&quot;tooltip&quot; data-html=&quot;true&quot; title=&quot;&lt;em&gt;Tooltip&lt;/em&gt; &lt;u&gt;with&lt;/u&gt; &lt;b&gt;HTML&lt;/b&gt;&quot;&gt;
+  Tooltip with HTML
+&lt;/button&gt;
+
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div> <!--⏹|🎫|👚-->
+                  </div> <!--⏹|🎫|👙 end of collapse -->
+
+                </div> <!--⏹|🎟️|📁|🎟️ end of card -->
+
+                <div class="card"> <!--▶️|🎟️|📁|🎟️--><!--🆎 TYPOGRAPHY & TEXT-->
+                    
+                  <div class="card-header" id="headingTypoText"> <!--▶️|🎫|🤯-->
+                    <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseheadingTypoText" aria-expanded="false" aria-controls="collapseheadingTypoText">
+                    <!--🎟️|📁 title of this card -->🆎 TYPOGRAPHY & TEXT
+                    </button>
+                    </h2>
+                  </div> <!--⏹|🎫|🤯-->
+                    
+                  <div id="collapseheadingTypoText" class="collapse" aria-labelledby="headingheadingTypoText" data-parent="#accordionTOOLBOX"> <!--▶️|🎫|👙-->
+                    <div class="card-body"> <!--▶️|🎫|👚-->
+
+                       <!-- Display ClassicHeadings -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Classic Headings (back to Guttenberg)</h3>
+
+                            <p class="h1">h1. Bootstrap heading</p>
+                            <p class="h2">h2. Bootstrap heading</p>
+                            <p class="h3">h3. Bootstrap heading</p>
+                            <p class="h4">h4. Bootstrap heading</p>
+                            <p class="h5">h5. Bootstrap heading</p>
+                            <p class="h6">h6. Bootstrap heading</p>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for ClassicHeadings -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;h1&gt;h1. It is always good&lt;/h1&gt;
+&lt;h2&gt;h2. To remember&lt;/h2&gt;
+&lt;h3&gt;h3. Those 6 levels&lt;/h3&gt;
+&lt;h4&gt;h4. Of headings' hierarchy&lt;/h4&gt;
+&lt;h5&gt;h5. Borrowed from Guttenberg&lt;/h5&gt;
+&lt;h6&gt;h6. And Implemented into the HTML language&lt;/h6&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <!-- Display Display Headings -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Display Headings (bigger impact)</h3>
+
+<h1 class="display-1">Display 1</h1>
+<h1 class="display-2">Display 2</h1>
+<h1 class="display-3">Display 3</h1>
+<h1 class="display-4">Display 4</h1>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for NameTheShit -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;h1 class=&quot;display-1&quot;&gt;Display 1&lt;/h1&gt;
+&lt;h1 class=&quot;display-2&quot;&gt;Display 2&lt;/h1&gt;
+&lt;h1 class=&quot;display-3&quot;&gt;Display 3&lt;/h1&gt;
+&lt;h1 class=&quot;display-4&quot;&gt;Display 4&lt;/h1&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <!-- Display Lead -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Lead paragraph</h3>
+
+                            <p class="lead">
+                              Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                            </p>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for Lead -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;p class=&quot;lead&quot;&gt;
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+&lt;/p&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <!-- Display InlineTextElements -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Inline text elements</h3>
+
+                            <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                            <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                            <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                            <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                            <p><u>This line of text will render as underlined</u></p>
+                            <p><small>This line of text is meant to be treated as fine print.</small></p>
+                            <p><strong>This line rendered as bold text.</strong></p>
+                            <p><em>This line rendered as italicized text.</em></p>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for InlineTextElements -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ins&gt;This line of text is meant to be treated as an addition to the document.&lt;/ins&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <!-- Display Abbreviations -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Abbréviations, raccourcis claviers</h3>
+
+                            <p>Abbréviation simple : <abbr title="attribute">attr</abbr> 👈</p>
+                            <p>Abbréviation pour acronyme (avec capitalisation auto) : <abbr title="HyperText Markup Language" class="initialism">HTML</abbr> 👈</p>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for Abbreviations -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;abbr title=&quot;attribute&quot;&gt;attr&lt;/abbr&gt;
+
+&lt;abbr title=&quot;HyperText Markup Language&quot; class=&quot;initialism&quot;&gt;HTML&lt;/abbr&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <!-- Display Coding -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Coding</h3>
+
+                            <p>Mise en abîme (raccourcis claviers, etc.) : <kbd>kbd</kbd> <kbd>CTRL</kbd> + <kbd>C</kbd> puis <kbd>CTRL</kbd> + <kbd>V</kbd> <kbd>👈</kbd> 
+                              <hr>
+                              <samp>This text is meant to be treated as sample output from a computer program.</samp>
+                              <br>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for Abbreviations -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;kbd&gt;kbd&lt;/kbd&gt; &lt;kbd&gt;CTRL&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt; puis &lt;kbd&gt;CTRL&lt;/kbd&gt; + &lt;kbd&gt;V&lt;/kbd&gt; &lt;kbd&gt;👈&lt;/kbd&gt;
+
+&lt;samp&gt;This text is meant to be treated as sample output from a computer program.&lt;/samp&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                      <!-- Display Blockquotes -->
+                      <div class="container py-1">
+                        <div class="row row py-2">
+                          <div class="col-lg-12 mx-auto">
+                            <h3 class="p-3 mb-2 bg-primary text-white lead">Blockquotes</h3>
+
+                            <blockquote class="blockquote">
+                              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+
+                            <blockquote class="blockquote text-center">
+                              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+
+                            <blockquote class="blockquote text-right">
+                              <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+
+                          </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                          <div class="col-lg-12 mx-auto">
+                            <!-- Copy code block for Blockquotes -->
+                            <div class="code-block">
+                              <pre>
+                                <code class="html">
+&lt;blockquote class=&quot;blockquote&quot;&gt;
+  &lt;p class=&quot;mb-0&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+  &lt;footer class=&quot;blockquote-footer&quot;&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;blockquote text-center&quot;&gt;
+  &lt;p class=&quot;mb-0&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+  &lt;footer class=&quot;blockquote-footer&quot;&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;blockquote text-right&quot;&gt;
+  &lt;p class=&quot;mb-0&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+  &lt;footer class=&quot;blockquote-footer&quot;&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+                                </code>
+                              </pre>
+                              <button class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard"><i class="far fa-copy"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+
+                    </div> <!--⏹|🎫|👚-->
+                  </div> <!--⏹|🎫|👙 end of collapse -->
+
+                </div> <!--⏹|🎟️|📁|🎟️ end of card -->
                     
               </div> <!--⏹|🗂️|🪗 end of subaccordion -->
 
@@ -6626,6 +9188,312 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
 
                 </div> <!--⏹|🎟️|📁 end of card -->
 
+
+
+
+        <div class="card"> <!--▶️|🎟️|📁--><!--📚 RESOURCES-->
+
+          <div class="card-header" id="headingRESOURCES"> <!--▶️|🎫|🤯-->
+            <h1 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseRESOURCES" aria-expanded="true" aria-controls="collapseRESOURCES">
+                📚 RESOURCES
+              </button>
+            </h1>
+          </div> <!--⏹|🎫|🤯-->
+
+          <div id="collapseRESOURCES" class="collapse" aria-labelledby="headingRESOURCES" data-parent="#BUESHCSaccordion"> <!--▶️|🎫|👙-->
+            <div class="card-body"> <!--▶️|🎫|👚-->
+
+                    <!-- B4CS Modal -->
+                      <div class="mb-3 d-flex justify-content-center">
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".B4CS-modal">Bootstrap 4 Interactive Cheat Sheet</button>
+                      </div>
+                      <div class="modal fade B4CS-modal" tabindex="-1" role="dialog" aria-labelledby="B4CSmodal" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="min-width: 90vw;">
+                          <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                              <h5 class="modal-title">Bootstrap 4 Interactive Cheat Sheet</h5>
+                              <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://hackerthemes.com/bootstrap-cheatsheet/" style="border:0px;"
+                                allowtransparency="true"
+                                width="100%" height="404px !important">
+                              </iframe>
+                            </div>
+                          </div>
+                          <div class="modal-footer bg-dark text-white">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- B4CS Modal -->
+              
+              <!-- beginning of subaccordion -->
+              <div class="accordion" id="accordionRESOURCES"> <!--▶️|🗂️🪗-->
+
+                <div class="card"> <!--▶️|🎟️|📁|🎟️--><!--🚧 WIP-->
+                    
+                  <div class="card-header" id="headingB4CS"> <!--▶️|🎫|🤯-->
+                    <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseB4CS" aria-expanded="false" aria-controls="collapseB4CS">
+                    <!-- title -->Blank
+                    </button>
+                    </h2>
+                  </div> <!--⏹|🎫|🤯-->
+                    
+                  <div id="collapseB4CS" class="collapse" aria-labelledby="headingB4CS" data-parent="#accordionRESOURCES"> <!--▶️|🎫|👙-->
+                    <div class="card-body trsptrn"> <!--▶️|🎫|👚-->
+
+
+                    </div> <!--⏹|🎫|👚-->
+                  </div> <!--⏹|🎫|👙-->
+                
+                </div> <!--⏹|🎟️|📁|🎟️-->
+                    
+                <div class="card"> <!--▶️|🎟️|📁|🎟️--><!--🚧 WIP-->
+                    
+                  <div class="card-header 🚧WIP" id="heading🚧WIP"> <!--▶️|🎫|🤯-->
+                    <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse🚧WIP" aria-expanded="false" aria-controls="collapseAlerts">
+                    <!-- title -->🚧 WIP
+                    </button>
+                    </h2>
+                  </div> <!--⏹|🎫|🤯-->
+                    
+                  <div id="collapse🚧WIP" class="collapse" aria-labelledby="heading🚧WIP" data-parent="#accordionRESOURCES"> <!--▶️|🎫|👙-->
+                    <div class="card-body"> <!--▶️|🎫|👚-->
+
+                      <section class="accordion_two_section ptb-100">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-sm-6 accordionTwo">
+                              <div class="panel-group" id="accordionTwoLeft">
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" data-parent="#accordionTwoLeft" href="#collapseTwoLeftone" aria-expanded="false" class="collapsed">
+                                        For what reason would it be advisable
+                                      </a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapseTwoLeftone" class="panel-collapse collapse" aria-expanded="false" role="tablist" style="height: 0px;">
+                                    <div class="panel-body">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit risus nisl, nec facilisis ante iaculis fringilla. Integer mattis risus vel dapibus rhoncus. Duis ut nulla et metus vehicula facilisis non eu quam.
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- /.panel-default -->
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a class="collapsed" data-toggle="collapse" data-parent="#accordionTwoLeft" href="#collapseTwoLeftTwo" aria-expanded="false">
+                                        for me to think about business content?
+                                      </a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapseTwoLeftTwo" class="panel-collapse collapse" aria-expanded="false" role="tablist">
+                                    <div class="panel-body">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit risus nisl, nec facilisis ante iaculis fringilla. Integer mattis risus vel dapibus rhoncus. Duis ut nulla et metus vehicula facilisis non eu quam.
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- /.panel-default -->
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a class="collapsed" data-toggle="collapse" data-parent="#accordionTwoLeft" href="#collapseTwoLeftThree" aria-expanded="false">
+                                        it be advisable
+                                      </a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapseTwoLeftThree" class="panel-collapse collapse" aria-expanded="false" role="tablist">
+                                    <div class="panel-body">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit risus nisl, nec facilisis ante iaculis fringilla. Integer mattis risus vel dapibus rhoncus. Duis ut nulla et metus vehicula facilisis non eu quam.
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- /.panel-default -->
+                              </div>
+                              <!--end of /.panel-group-->
+                            </div>
+                            <!--end of /.col-sm-6-->
+                            <div class="col-sm-6 accordionTwo">
+                              <div class="panel-group" id="accordionTwoRight">
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a class="collapsed" data-toggle="collapse" data-parent="#accordionTwoRight" href="#collapseTwoRightone" aria-expanded="false">
+                                        For what reason would it be advisable
+                                      </a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapseTwoRightone" class="panel-collapse collapse" aria-expanded="false" role="tablist">
+                                    <div class="panel-body">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit risus nisl, nec facilisis ante iaculis fringilla. Integer mattis risus vel dapibus rhoncus. Duis ut nulla et metus vehicula facilisis non eu quam.
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- /.panel-default -->
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a class="collapsed" data-toggle="collapse" data-parent="#accordionTwoRight" href="#collapseTwoRightTwo" aria-expanded="false">
+                                       for me to think about business content?
+                                     </a>
+                                   </h4>
+                                 </div>
+                                 <div id="collapseTwoRightTwo" class="panel-collapse collapse" aria-expanded="false" role="tablist">
+                                  <div class="panel-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit risus nisl, nec facilisis ante iaculis fringilla. Integer mattis risus vel dapibus rhoncus. Duis ut nulla et metus vehicula facilisis non eu quam.
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /.panel-default -->
+                              <div class="panel panel-default">
+                                <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordionTwoRight" href="#collapseTwoRightThree" aria-expanded="false">
+                                      it be advisable
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseTwoRightThree" class="panel-collapse collapse in" aria-expanded="false" role="tablist">
+                                  <div class="panel-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit risus nisl, nec facilisis ante iaculis fringilla. Integer mattis risus vel dapibus rhoncus. Duis ut nulla et metus vehicula facilisis non eu quam.
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /.panel-default -->
+                            </div>
+                            <!--end of /.panel-group-->
+                          </div>
+                          <!--end of /.col-sm-6-->
+                        </div>
+                      </div>
+                      <!--end of /.container-->
+                    </section>
+
+                    <div class="dropdown-divider py-1 bg-warning"></div>
+                    <br><center>
+                    <div class="spinner">
+                      <div class="spinner1"></div>
+                    </div>
+                  </center><br>
+
+                    <div class="dropdown-divider py-1 bg-warning"></div>
+
+                    <section class="wow fadeIn bg-gray animated" style="visibility: visible; animation-name: fadeIn;">
+                      <div class="container">
+
+                        <div class="row">
+                          <div class="col-md-8 col-sm-12 center-col">
+                            <div class="progress-bar-main progress-bar-style2">
+                              <!-- progress bar item -->
+                              <div class="progress-bar-sub">
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span>60%</span></div>
+                                </div>
+                                <div class="progress-name"><strong>HTML</strong></div>
+                              </div>
+                              <!-- end progress bar item -->
+                              <!-- progress bar item -->
+                              <div class="progress-bar-sub">
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"><span>90%</span></div>
+                                </div>
+                                <div class="progress-name"><strong>CSS</strong></div>
+                              </div>
+                              <!-- end progress bar item -->
+                              <!-- progress bar item -->
+                              <div class="progress-bar-sub">
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"><span>95%</span></div>
+                                </div>
+                                <div class="progress-name"><strong>WORDPRESS</strong></div>
+                              </div>
+                              <!-- end progress bar item -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <div class="dropdown-divider py-1 bg-warning"></div>
+
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <p>User timeline</p>
+                            <div class="timeline p-4 block mb-4">
+                              <div class="tl-item active">
+                                <div class="tl-dot"><a class="tl-author" href="#" data-abc="true"><span class="w-32 avatar circle gd-warning">G</span></a></div>
+                                <div class="tl-content">
+                                  <div class=""><a href="#" data-abc="true">@twitter</a> thanks for you appreciation</div>
+                                  <div class="tl-date text-muted mt-1">22 june,2018</div>
+                                </div>
+                              </div>
+                              <div class="tl-item">
+                                <div class="tl-dot"><a class="tl-author" href="#" data-abc="true"><span class="w-32 avatar circle gd-warning"><img src="https://img.icons8.com/color/16/000000/person-female.png" alt="."></span></a></div>
+                                <div class="tl-content">
+                                  <div class="">Do you know how <a href="#" data-abc="true">Google</a> search works.</div>
+                                  <div class="tl-date text-muted mt-1">15 days ago</div>
+                                </div>
+                              </div>
+                              <div class="tl-item">
+                                <div class="tl-dot"><a class="tl-author" href="#" data-abc="true"><span class="w-32 avatar circle gd-info"><img src="https://img.icons8.com/office/16/000000/guest-male.png" alt="."></span></a></div>
+                                <div class="tl-content">
+                                  <div class="">Order placed <a href="#" data-abc="true">@google</a> Store</div>
+                                  <div class="tl-date text-muted mt-1">12 days ago</div>
+                                </div>
+                              </div>
+                              <div class="tl-item">
+                                <div class="tl-dot"><a class="tl-author" href="#" data-abc="true"><span class="w-32 avatar circle gd-info">B</span></a></div>
+                                <div class="tl-content">
+                                  <div class=""><a href="#" data-abc="true">Thanks for </a>your support</div>
+                                  <div class="tl-date text-muted mt-1">5 hours ago</div>
+                                </div>
+                              </div>
+                              <div class="tl-item">
+                                <div class="tl-dot"><a class="tl-author" href="#" data-abc="true"><span class="w-32 avatar circle gd-warning">H</span></a></div>
+                                <div class="tl-content">
+                                  <div class="">One of the best way to have single handed car</div>
+                                  <div class="tl-date text-muted mt-1">12 jan, 2019</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                    <div class="dropdown-divider py-1 bg-warning"></div>
+
+                        <section id="block_content">
+                          <div class="col-md-6 container">
+                           <blockquote class="blockstyle">
+                            <span class="triangle"></span>The Kadence Importer allows you to easily import all including images, from any of our Kadence themes demos. When you install a Kadence theme, the importer will automatically see what theme you are using and give you options to import anyone of those themes
+                          </blockquote>
+                        </div>
+                      </section>
+
+                    <div class="dropdown-divider py-1 bg-warning"></div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    </div> <!--⏹|🎫|👚-->
+                  </div> <!--⏹|🎫|👙-->
+                
+                </div> <!--⏹|🎟️|📁|🎟️-->
+                    
+              </div> <!--⏹|🗂️|🪗 end of subaccordion -->
+
+            </div> <!--⏹|🎫|👚-->
+          </div> <!--⏹|🎫|👙-->
+
+                </div> <!--⏹|🎟️|📁 end of card -->
 
               </div> <!--⏹|🗂️|🪗 end of subaccordion -->
 
@@ -6638,6 +9506,12 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
 
     </div> <!--⏹-->
 
+          <center>
+          <kbd>beta</kbd><a href="https://github.com/inspe-master-meef-neo/Le-BUESHCS" target="_blank" class="badge badge-pill badge-danger">v.0.9542</a><br>
+          <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=c6471dcd36486cf7d9fda7da4aad11fab3ac0710'></script>
+          <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1010395/t/10"></script>
+          </center>
+          <br>
 
             <!--🪗 this is the end of the accordion, don't be sad, we'll sing again 🎶♫🎵♪ -->
             <!-- UTILITY STUFF FOR THIS SHIT AFTER THIS -->
@@ -6661,6 +9535,8 @@ sagittis lacus vel augue laoreet rutrum faucibus.&quot;&gt;
             <a id="back-to-top" href="#" class="btn btn-dark btn-lg back-to-top" role="button">
               <i class="fas fa-chevron-up"></i>
             </a>
+
+    <script src="assets/js/scripting-bueshcs.js"></script>
 
 </body>
 </html>

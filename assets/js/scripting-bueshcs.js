@@ -1,3 +1,63 @@
+/* Direct access and scrolling */
+
+$(document).ready(function () {
+  // Function to update the address bar URL when a card is clicked
+  function updateUrl(id) {
+    if (history.pushState) {
+      let url = window.location.protocol + "//" + window.location.host + window.location.pathname;
+      window.history.pushState({ path: url }, "", url + "#" + encodeURIComponent(id));
+    }
+  }
+
+  // Function to scroll the element into view and open the card
+  function openCardAndScrollToView(cardHeader) {
+    // Open the card
+    let cardCollapse = $(cardHeader).next(".collapse");
+    $(cardCollapse).collapse("show");
+
+    // Scroll the card into view
+    setTimeout(() => {
+      cardHeader.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 200);
+  }
+
+  // Update URL and open the card when it's clicked
+  $(".card-header").click(function () {
+    let cardId = $(this).attr("id");
+    updateUrl(cardId);
+    openCardAndScrollToView(this);
+  });
+
+  // Check if there's a hash in the URL and open the corresponding card
+  function openCardFromUrlHash() {
+    if (window.location.hash) {
+      let hash = decodeURIComponent(window.location.hash.substring(1));
+      let cardHeader = document.getElementById(hash);
+
+      if (cardHeader) {
+        // If the card is inside a nested accordion, open the parent card first
+        let parentCardHeaders = $(cardHeader).parents(".card").parents(".collapse").siblings(".card-header");
+        if (parentCardHeaders.length) {
+          parentCardHeaders.each((_, parentCardHeader) => {
+            openCardAndScrollToView(parentCardHeader);
+          });
+        }
+
+        // Open the card and scroll to view
+        openCardAndScrollToView(cardHeader);
+      }
+    }
+  }
+
+  openCardFromUrlHash();
+});
+
+/* Enable popovers everywhere */
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
 /* Custom Copy Code Blocks */
 
 $(function() {
@@ -76,22 +136,26 @@ $(document).ready(function() {
 
   // Reset button
   $('#search-btn .close-icon').click(function() {
-    // Reset search input
-    $('#search-input').val('');
+    resetSearch();
+  });
 
-    // Remove highlight from all card headers
-    $('.card-header').removeClass('search-highlight');
-
-    // Show all cards
-    $('.card').show();
-
-    // Collapse all cards
-    $('.card .collapse').collapse('hide');
+  // Search button
+  $('#search-btn .search-icon').click(function() {
+    $('#search-input').focus();
   });
 
   // Search input
-  $('#search-input').on('keyup', function() {
+  $('#search-input').on('keyup', function(event) {
     var searchText = $(this).val().toLowerCase();
+
+    // Show or hide the close button
+    if (searchText.length > 0) {
+      $("#search-btn .close-icon").fadeIn();
+      $("#search-btn .search-icon").fadeOut();
+    } else {
+      $("#search-btn .close-icon").fadeOut();
+      $("#search-btn .search-icon").fadeIn();
+    }
 
     if (searchText.length > 0) {
       // Highlight matching card headers
@@ -124,58 +188,36 @@ $(document).ready(function() {
         }
       });
     } else {
-      // Reset search
-      $('#search-btn .close-icon').click();
+      resetSearch();
     }
   });
+
+  // Reset search on ESC key
+  $(document).keyup(function(event) {
+    if (event.keyCode === 27) {
+      resetSearch();
+    }
+  });
+
+  // Function to reset the search
+  function resetSearch() {
+    // Reset search input
+    $('#search-input').val('');
+
+    // Remove highlight from all card headers
+    $('.card-header').removeClass('search-highlight');
+
+    // Show all cards
+    $('.card').show();
+
+    // Collapse all cards
+    $('.card .collapse').collapse('hide');
+
+    // Hide the close button
+    $("#search-btn .close-icon").fadeOut();
+    $("#search-btn .search-icon").fadeIn();
+
+    // Blur the input
+    $('#search-input').blur();
+  }
 });
-
-
-// $(document).ready(function() {
-//   $('#search-input').on('input', function() {
-//     var searchText = $(this).val().toUpperCase();
-//     if (searchText.length > 0) {
-//       $('.card-header').addClass('d-none');
-//       $('.card-header').each(function() {
-//         var accordionBtnText = $(this).find('.btn-link').text().toUpperCase();
-//         if (accordionBtnText.indexOf(searchText) !== -1) {
-//           $(this).removeClass('d-none');
-//           var regex = new RegExp(searchText, 'gi');
-//           var highlightedText = accordionBtnText.replace(regex, '<mark>$&</mark>');
-//           $(this).find('.btn-link').html(highlightedText);
-//           $(this).parents('.collapse').collapse('show');
-//         }
-//       });
-//       $('.card').each(function() {
-//         var visibleHeaders = $(this).find('.card-header:not(.d-none)').length;
-//         if (visibleHeaders === 0) {
-//           $(this).addClass('d-none');
-//         } else {
-//           $(this).removeClass('d-none');
-//         }
-//       });
-//       $('.search-container').addClass('show-icons');
-//     } else {
-//       $('.card-header').removeClass('d-none');
-//       $('.card-header .btn-link').each(function() {
-//         $(this).html($(this).text());
-//       });
-//       $('.card').removeClass('d-none');
-//       $('.search-container').removeClass('show-icons');
-//     }
-//   });
-
-//   $('#search-btn').on('click', function() {
-//     if ($('#search-input').val().length > 0) {
-//       $('#search-input').val('');
-//       $('#search-input').trigger('input');
-//     } else {
-//       $('.card-header').removeClass('d-none');
-//       $('.card-header .btn-link').each(function() {
-//         $(this).html($(this).text());
-//       });
-//       $('.card').removeClass('d-none');
-//       $('.search-container').removeClass('show-icons');
-//     }
-//   });
-// });
